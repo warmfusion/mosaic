@@ -57,7 +57,9 @@
           .done(function(data) {
             clients = data.Clients;
             $.each( clients, function( i, client ) {
-                gridster.add_widget.apply(gridster, ['<li>' + client.name + '</li>', 1,1]);
+                size =  client.status+1;
+                widget = gridster.add_widget.apply(gridster, ['<li>' + client.name + '</li>', size,size]);
+                widget.toggleClass('status-' + size);
               });
           })
           .fail(function() {

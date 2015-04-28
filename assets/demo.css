@@ -8,9 +8,23 @@ ul {
 }
 
 
-.error {
+
+.status-1 { /* OK */
+ background-color: #AAFFAA !important;
+}
+
+.status-2 { /* WARN */
+ background-color: #FFFFAA !important;
+}
+
+.status-3 { /* CRITICAL */
  background-color: #FFAAAA !important;
 }
+
+.status-4 { /* UNKNOWN */
+ background-color: #AAAAAA !important;
+}
+
 /*/
 /* demo
 /*/
