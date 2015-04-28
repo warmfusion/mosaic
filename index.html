@@ -55,9 +55,11 @@
         gridster.$el
           .on('mouseenter', '> li', function() {
               gridster.resize_widget($(this), 3, 3);
+              $(this).toggleClass('error');
           })
           .on('mouseleave', '> li', function() {
               gridster.resize_widget($(this), 1, 1);
+              $(this).toggleClass('error')
           });
 
       });
