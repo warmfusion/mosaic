@@ -15,18 +15,6 @@
 
   <div class="gridster">
     <ul>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">server01</li>
-      <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">server02</li>
-      <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">application01</li>
-      <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">application02</li>
-      <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">product01</li>
-      <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">pgsql01</li>
-      <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">pgsql02</li>
-      <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">monitor01</li>
-      <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">monitor02</li>
-      <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">logger01</li>
-      <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">logger02</li>
-      <li data-row="3" data-col="4" data-sizex="1" data-sizey="1">logger03</li>
     </ul>
   </div>
 
@@ -45,8 +33,8 @@
       $(function(){
 
         gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [100, 100],
-          widget_margins: [5, 5],
+          widget_base_dimensions: [30, 30],
+          widget_margins: [2, 2],
           helper: 'clone'
         }).data('gridster');
 
@@ -62,6 +50,22 @@
               $(this).toggleClass('error')
           });
 
+
+        $.getJSON( "data/sensu.test.json", function() {
+          console.log( "success" );
+        })
+          .done(function(data) {
+            clients = data.Clients;
+            $.each( clients, function( i, client ) {
+                gridster.add_widget.apply(gridster, ['<li>' + client.name + '</li>', 1,1]);
+              });
+          })
+          .fail(function() {
+            console.log( "error" );
+          })
+          .always(function() {
+            console.log( "complete" );
+          });
       });
     </script>
 </body>

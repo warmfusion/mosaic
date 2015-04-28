@@ -1,0 +1,5096 @@
+{
+    "Aggregates": [
+        {
+            "check": "ucarp-fcsis_tc_vif3-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253906.0,
+                1430253877.0,
+                1430253846.0,
+                1430253817.0,
+                1430253786.0,
+                1430253757.0,
+                1430253726.0,
+                1430253697.0,
+                1430253666.0,
+                1430253637.0,
+                1430253606.0,
+                1430253577.0,
+                1430253546.0,
+                1430253517.0,
+                1430253486.0,
+                1430253457.0,
+                1430253426.0,
+                1430253397.0,
+                1430253366.0,
+                1430253337.0
+            ]
+        },
+        {
+            "check": "ucarp-fte-vif4-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253917.0,
+                1430253903.0,
+                1430253889.0,
+                1430253886.0,
+                1430253857.0,
+                1430253843.0,
+                1430253829.0,
+                1430253826.0,
+                1430253797.0,
+                1430253783.0,
+                1430253769.0,
+                1430253766.0,
+                1430253737.0,
+                1430253723.0,
+                1430253709.0,
+                1430253706.0,
+                1430253677.0,
+                1430253663.0,
+                1430253649.0,
+                1430253646.0,
+                1430253617.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_tc_vif4-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253877.0,
+                1430253869.0,
+                1430253817.0,
+                1430253809.0,
+                1430253757.0,
+                1430253749.0,
+                1430253697.0,
+                1430253689.0,
+                1430253637.0,
+                1430253629.0,
+                1430253577.0,
+                1430253569.0,
+                1430253517.0,
+                1430253509.0,
+                1430253457.0,
+                1430253449.0,
+                1430253397.0,
+                1430253389.0,
+                1430253337.0,
+                1430253329.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_ix_vif1-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253893.0,
+                1430253874.0,
+                1430253833.0,
+                1430253814.0,
+                1430253773.0,
+                1430253754.0,
+                1430253713.0,
+                1430253694.0,
+                1430253653.0,
+                1430253634.0,
+                1430253593.0,
+                1430253574.0,
+                1430253533.0,
+                1430253514.0,
+                1430253473.0,
+                1430253454.0,
+                1430253413.0,
+                1430253394.0,
+                1430253353.0,
+                1430253334.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_ix_vif2-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253905.0,
+                1430253866.0,
+                1430253845.0,
+                1430253806.0,
+                1430253785.0,
+                1430253746.0,
+                1430253725.0,
+                1430253686.0,
+                1430253665.0,
+                1430253626.0,
+                1430253605.0,
+                1430253566.0,
+                1430253545.0,
+                1430253506.0,
+                1430253485.0,
+                1430253446.0,
+                1430253425.0,
+                1430253386.0,
+                1430253365.0,
+                1430253326.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_ix_vif3-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253918.0,
+                1430253900.0,
+                1430253858.0,
+                1430253840.0,
+                1430253798.0,
+                1430253780.0,
+                1430253738.0,
+                1430253720.0,
+                1430253678.0,
+                1430253660.0,
+                1430253618.0,
+                1430253600.0,
+                1430253558.0,
+                1430253540.0,
+                1430253498.0,
+                1430253480.0,
+                1430253438.0,
+                1430253420.0,
+                1430253378.0,
+                1430253360.0,
+                1430253318.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_ix_vif4-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253878.0,
+                1430253818.0,
+                1430253758.0,
+                1430253698.0,
+                1430253638.0,
+                1430253578.0,
+                1430253518.0,
+                1430253458.0,
+                1430253398.0,
+                1430253338.0,
+                1430253278.0,
+                1430253218.0,
+                1430253158.0,
+                1430253098.0,
+                1430253038.0,
+                1430252978.0,
+                1430252918.0,
+                1430252858.0,
+                1430252798.0,
+                1430252738.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_tc_vif1-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253912.0,
+                1430253904.0,
+                1430253852.0,
+                1430253844.0,
+                1430253792.0,
+                1430253784.0,
+                1430253732.0,
+                1430253724.0,
+                1430253672.0,
+                1430253664.0,
+                1430253612.0,
+                1430253604.0,
+                1430253552.0,
+                1430253544.0,
+                1430253492.0,
+                1430253484.0,
+                1430253432.0,
+                1430253424.0,
+                1430253372.0,
+                1430253364.0
+            ]
+        },
+        {
+            "check": "ucarp-fcsis_tc_vif2-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253921.0,
+                1430253904.0,
+                1430253861.0,
+                1430253844.0,
+                1430253801.0,
+                1430253784.0,
+                1430253741.0,
+                1430253724.0,
+                1430253681.0,
+                1430253664.0,
+                1430253621.0,
+                1430253604.0,
+                1430253561.0,
+                1430253544.0,
+                1430253501.0,
+                1430253484.0,
+                1430253441.0,
+                1430253424.0,
+                1430253381.0,
+                1430253364.0,
+                1430253321.0
+            ]
+        },
+        {
+            "check": "ucarp-fte-vif3-interface",
+            "dc": "Co-Lo",
+            "issued": [
+                1430253879.0,
+                1430253877.0,
+                1430253876.0,
+                1430253819.0,
+                1430253817.0,
+                1430253816.0,
+                1430253759.0,
+                1430253757.0,
+                1430253756.0,
+                1430253699.0,
+                1430253697.0,
+                1430253696.0,
+                1430253639.0,
+                1430253637.0,
+                1430253636.0,
+                1430253579.0,
+                1430253577.0,
+                1430253576.0,
+                1430253519.0,
+                1430253517.0
+            ]
+        }
+    ],
+    "Checks": [
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_tc_vif3-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "tc-fcsis-vif3",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Stafford and Schirra and restart ucarp-3"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/network/check-netstat-tcp.rb",
+            "dc": "Co-Lo",
+            "description": "Check for number of established TCP connections from this host",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "tcp_connections",
+            "occurrences": 3,
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "network"
+            ]
+        },
+        {
+            "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p sensu-api -c 1",
+            "dc": "Co-Lo",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "sensu-api",
+            "standalone": true,
+            "subscribers": [
+                "monitoring"
+            ]
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/check-ram.rb",
+            "dc": "Co-Lo",
+            "description": "Ensure ram usage is within reasonable levels",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "memory",
+            "occurrences": 3,
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ]
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/cpu-pcnt-usage-metrics.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "cpu-pcnt-usage-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_ix_vif4-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "ix-fcsis-vif4",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Lovell and Conrad and restart ucarp-4"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/load-metrics.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "load-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_ix_vif3-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "ix-fcsis-vif3",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Lovell and Conrad and restart ucarp-3"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/disk-capacity-metrics.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "disk-capacity-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/check-disk.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "disk",
+            "occurrences": 3,
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ]
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_tc_vif2-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "tc-fcsis-vif2",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Stafford and Schirra and restart ucarp-2"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_tc_vif4-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "tc-fcsis-vif4",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Stafford and Schirra and restart ucarp-4"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fte-vif4-interface -c2 -C2 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "fte-vif4",
+            "standalone": true,
+            "tip": "Exactly two VIP should be active at a time - check Minchinhampton, Mickleton, Dursley and Dymock"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/check-load.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "load",
+            "occurrences": 3,
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ]
+        },
+        {
+            "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p '/usr/bin/puppet agent' -c 1",
+            "dc": "Co-Lo",
+            "interval": 300,
+            "name": "puppet-agent",
+            "occurrences": 3,
+            "standalone": true
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fte-vif3-interface -c2 -C2 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "fte-vif3",
+            "standalone": true,
+            "tip": "Exactly two VIP should be active at a time - check Minchinhampton, Mickleton, Dursley and Dymock"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/disk-metrics.rb",
+            "dc": "Co-Lo",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "disk-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/memory-metrics-percent.rb",
+            "dc": "Co-Lo",
+            "description": "Ensure ram usage is within reasonable levels",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "memory-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "system"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-puppet-env.rb -w 1440 -c 10080",
+            "dc": "Co-Lo",
+            "interval": 300,
+            "name": "puppet-environment",
+            "standalone": true
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_ix_vif2-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "ix-fcsis-vif2",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Lovell and Conrad and restart ucarp-2"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p sensu-server -c 1",
+            "dc": "Co-Lo",
+            "handlers": [
+                "default"
+            ],
+            "interval": 60,
+            "name": "sensu-server",
+            "runbook": "https://wiki.examplenet.com/x/4oqq",
+            "slack": {
+                "channels": [
+                    "#craggyisland"
+                ]
+            },
+            "standalone": true,
+            "subscribers": [
+                "monitoring"
+            ],
+            "tip": "Check /var/log/sensu-server.log and/or try a restart of sensu-server"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_ix_vif1-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "ix-fcsis-vif1",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Lovell and Conrad and restart ucarp-1"
+        },
+        {
+            "command": "/opt/sensu-community/plugins/system/interface-metrics.rb",
+            "dc": "Co-Lo",
+            "description": "Check for number of established TCP connections from this host",
+            "handlers": [
+                "metrics"
+            ],
+            "interval": 60,
+            "name": "interface-metrics",
+            "standalone": true,
+            "subscribers": [
+                "base",
+                "network"
+            ],
+            "type": "metric"
+        },
+        {
+            "command": "/opt/sensu-example/plugins/check-standalone-aggregate.rb -n ucarp-fcsis_tc_vif1-interface -c1 -C1 -A 70",
+            "dc": "Co-Lo",
+            "handlers": [
+                "high",
+                "slack-high"
+            ],
+            "interval": 60,
+            "name": "tc-fcsis-vif1",
+            "standalone": true,
+            "tip": "Exactly one VIP should be active at a time - check Stafford and Schirra and restart ucarp-1"
+        }
+    ],
+    "Clients": [
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "yalosian.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "yalosian.priv.example.com"
+            ],
+            "timestamp": 1430253905.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "kilcot.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "kilcot.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "rochanie.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "rochanie.priv.example.com"
+            ],
+            "timestamp": 1430253902.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "schirra.some.example.com",
+            "output": " and 1 more...",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "schirra.priv.example.com"
+            ],
+            "timestamp": 1430253907.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-fluentagg02.priv.example.com",
+            "output": "CheckFluentdMonitorAgent WARNING: plugin_id object:127ce54 buffer_queue_length 68\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "ix-fluentagg02.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "delvos.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "delvos.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "lovell.some.example.com",
+            "output": " and 3 more...",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "lovell.priv.example.com"
+            ],
+            "timestamp": 1430253903.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "newnham.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "newnham.priv.example.com"
+            ],
+            "timestamp": 1430253907.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-uchiwa01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-uchiwa01.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "marlonia.some.example.com",
+            "output": "CheckDisk WARNING: / 90%, / 90%\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "marlonia.priv.example.com"
+            ],
+            "timestamp": 1430253920.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "malaya.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "malaya.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fijicsis01.priv.example.com",
+            "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fijicsis], expected [production] for 8 days 11 hours 2 minutes 7 seconds\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "fijicsis01.priv.example.com"
+            ],
+            "timestamp": 1430253919.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "yadera.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "yadera.priv.example.com"
+            ],
+            "timestamp": 1430253908.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc04.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc04.priv.example.com"
+            ],
+            "timestamp": 1430253908.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "conrad.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "conrad.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "handlers": [
+                    "high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fijiproc02.priv.example.com",
+            "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "fijiproc02.priv.example.com"
+            ],
+            "timestamp": 1430253908.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc08.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc08.priv.example.com"
+            ],
+            "timestamp": 1430253901.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "malur.some.example.com",
+            "output": "CheckPuppetEnvironment WARNING: environment mismatch: is [haproxy_reload_service], expected [production] for 1 days 6 hours 25 minutes 0 seconds\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "malur.priv.example.com"
+            ],
+            "timestamp": 1430253901.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "luxley.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "luxley.priv.example.com"
+            ],
+            "timestamp": 1430253906.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {},
+            "name": "ix-carbon02.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-carbon02.priv.example.com"
+            ],
+            "timestamp": 1430253910.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "runara.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "runara.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-fluentagg01.priv.example.com",
+            "output": "ESClusterStatus CRITICAL: Connection refused\n and 2 more...",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "ix-fluentagg01.priv.example.com"
+            ],
+            "timestamp": 1430253910.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "mariah.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "mariah.priv.example.com"
+            ],
+            "timestamp": 1430253903.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc03.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc03.priv.example.com"
+            ],
+            "timestamp": 1430253901.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "rousseau.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "rousseau.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "handlers": [
+                    "high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fijiproc01.priv.example.com",
+            "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "fijiproc01.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "rubicun.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "rubicun.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "stafford.some.example.com",
+            "output": " and 1 more...",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "stafford.priv.example.com"
+            ],
+            "timestamp": 1430253911.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc07.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc07.priv.example.com"
+            ],
+            "timestamp": 1430253903.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "torad.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "torad.priv.example.com"
+            ],
+            "timestamp": 1430253910.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "malcor.some.example.com",
+            "output": "CheckDisk WARNING: / 90%, / 90%\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "malcor.priv.example.com"
+            ],
+            "timestamp": 1430253905.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "halee.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "halee.priv.example.com"
+            ],
+            "timestamp": 1430253908.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {},
+            "name": "ix-graphiteweb01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-graphiteweb01.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.16.0"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {},
+            "name": "ix-carbon01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-carbon01.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "scalos.some.example.com",
+            "output": "CheckHAProxy WARNING: UP: 66% of 3 /efs-mysql-cluster/ services, DOWN: fornax\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "scalos.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "lydbrook.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "lydbrook.priv.example.com"
+            ],
+            "timestamp": 1430253911.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "zayra.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "zayra.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "lypiatt.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "lypiatt.priv.example.com"
+            ],
+            "timestamp": 1430253905.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "dursley.some.example.com",
+            "output": "",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "dursley.priv.example.com"
+            ],
+            "timestamp": 1430253919.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ruah.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ruah.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "dyomin.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "dyomin.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "handlers": [
+                    "high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "mechanus.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "mechanus.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc02.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc02.priv.example.com"
+            ],
+            "timestamp": 1430253906.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "opkins.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "opkins.priv.example.com"
+            ],
+            "timestamp": 1430253910.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "lydney.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "lydney.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc06.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc06.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "endor.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "endor.priv.example.com"
+            ],
+            "timestamp": 1430253911.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "mariposa.some.example.com",
+            "output": "CheckDisk WARNING: / 87%, / 87%\n",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "mariposa.priv.example.com"
+            ],
+            "timestamp": 1430253907.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "minchinhampton.some.example.com",
+            "output": "",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "minchinhampton.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-sensu02.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-sensu02.priv.example.com"
+            ],
+            "timestamp": 1430253905.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "komarov.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "komarov.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {},
+            "name": "jiak.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "jiak.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.16.0"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "nel.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "nel.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "savitskaya.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "savitskaya.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-rmq02.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-rmq02.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "zed.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "zed.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "grechko.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "grechko.priv.example.com"
+            ],
+            "timestamp": 1430253914.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "mickleton.some.example.com",
+            "output": "",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "mickleton.priv.example.com"
+            ],
+            "timestamp": 1430253918.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "haproxy_stats": {
+                "password": "REDACTED",
+                "port": 1936,
+                "username": "statsadmin"
+            },
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "dymock.some.example.com",
+            "output": "",
+            "safe_mode": false,
+            "status": 1,
+            "subscriptions": [
+                "dymock.priv.example.com"
+            ],
+            "timestamp": 1430253908.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "mari.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "mari.priv.example.com"
+            ],
+            "timestamp": 1430253903.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fenton.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "fenton.priv.example.com"
+            ],
+            "timestamp": 1430253902.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "brax.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "brax.priv.example.com"
+            ],
+            "timestamp": 1430253906.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "kemble.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "kemble.priv.example.com"
+            ],
+            "timestamp": 1430253920.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "manu.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "manu.priv.example.com"
+            ],
+            "timestamp": 1430253913.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc01.priv.example.com"
+            ],
+            "timestamp": 1430253919.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "zephon.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "zephon.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "handlers": [
+                    "high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "wiki01.priv.example.com",
+            "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "wiki01.priv.example.com"
+            ],
+            "timestamp": 1430253916.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fijicsis02.priv.example.com",
+            "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fijicsis], expected [production] for 8 days 7 hours 25 minutes 26 seconds\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "fijicsis02.priv.example.com"
+            ],
+            "timestamp": 1430253916.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc05.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc05.priv.example.com"
+            ],
+            "timestamp": 1430253910.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "yadalla.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "yadalla.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "gagarin.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "gagarin.priv.example.com"
+            ],
+            "timestamp": 1430253919.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "fijiredis01.priv.example.com",
+            "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fiji], expected [production] for 8 days 3 hours 50 minutes 47 seconds\n",
+            "safe_mode": false,
+            "status": 2,
+            "subscriptions": [
+                "fijiredis01.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "efsproc09.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "efsproc09.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.254.254",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "tereshkova.some.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "tereshkova.priv.example.com"
+            ],
+            "timestamp": 1430253909.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-sensu01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-sensu01.priv.example.com"
+            ],
+            "timestamp": 1430253917.0,
+            "version": "0.17.2"
+        },
+        {
+            "acknowledged": false,
+            "address": "192.0.255.255",
+            "bind": "127.0.0.1",
+            "dc": "Co-Lo",
+            "keepalive": {
+                "custom": {
+                    "subdue": {
+                        "begin": "7PM UTC",
+                        "end": "7AM UTC"
+                    }
+                },
+                "handlers": [
+                    "slack-high"
+                ],
+                "thresholds": {
+                    "critical": 300,
+                    "warning": 60
+                }
+            },
+            "name": "ix-rmq01.priv.example.com",
+            "safe_mode": false,
+            "status": 0,
+            "subscriptions": [
+                "ix-rmq01.priv.example.com"
+            ],
+            "timestamp": 1430253915.0,
+            "version": "0.17.2"
+        }
+    ],
+    "Dc": [
+        {
+            "aggregates": "10",
+            "checks": "24",
+            "clients": "76",
+            "events": "27",
+            "name": "Co-Lo",
+            "redis": "true",
+            "stashes": "22",
+            "transport": "true",
+            "version": "0.17.2"
+        }
+    ],
+    "Events": [
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth0:ucarp3 | grep 'inet addr:'",
+                "duration": 0.013,
+                "executed": 1430253906.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253906.0,
+                "name": "ucarp-fcsis_tc_vif3-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "schirra.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "schirra.priv.example.com"
+                ],
+                "timestamp": 1430253887.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "dccca211-7776-4b1b-af51-4f43de41e056",
+            "occurrences": 16258
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth0:ucarp1 | grep 'inet addr:'",
+                "duration": 0.013,
+                "executed": 1430253904.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253904.0,
+                "name": "ucarp-fcsis_tc_vif1-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "schirra.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "schirra.priv.example.com"
+                ],
+                "timestamp": 1430253887.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "982109bf-5535-406d-8679-6a8f72d38ca9",
+            "occurrences": 16258
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/fluentd/check-fluentd-monitor-agent.rb -m buffer_queue_length -w 25 -c 100",
+                "dependencies": [
+                    "disk",
+                    "check-es-cluster-status"
+                ],
+                "duration": 0.272,
+                "executed": 1430253870.0,
+                "handlers": [
+                    "low"
+                ],
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253870.0,
+                "name": "fluent-aggregator",
+                "output": "CheckFluentdMonitorAgent WARNING: plugin_id object:127ce54 buffer_queue_length 68\n",
+                "standalone": true,
+                "status": 1,
+                "subscribers": [
+                    "logging",
+                    "monitoring"
+                ],
+                "tip": "Low priority - Fluents are prototype and large queues are part of the fun",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "ix-fluentagg02.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "ix-fluentagg02.priv.example.com"
+                ],
+                "timestamp": 1430253854.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "bfcf6962-ae67-46f5-b740-336e49f8992b",
+            "occurrences": 369
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth0:ucarp1 | grep 'inet addr:'",
+                "duration": 0.013,
+                "executed": 1430253874.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253874.0,
+                "name": "ucarp-fcsis_ix_vif1-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "lovell.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "lovell.priv.example.com"
+                ],
+                "timestamp": 1430253863.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "5b93a794-968a-4a56-ba38-eefa995b68b0",
+            "occurrences": 16149
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp2 | grep 'inet addr:'",
+                "duration": 0.016,
+                "executed": 1430253905.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253905.0,
+                "name": "ucarp-fcsis_ix_vif2-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "lovell.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "lovell.priv.example.com"
+                ],
+                "timestamp": 1430253903.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "d3f4d11e-7b61-48f1-af8e-4ee680ffe1b2",
+            "occurrences": 16149
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth0:ucarp3 | grep 'inet addr:'",
+                "duration": 0.014,
+                "executed": 1430253918.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253918.0,
+                "name": "ucarp-fcsis_ix_vif3-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "lovell.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "lovell.priv.example.com"
+                ],
+                "timestamp": 1430253903.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "8aa581a8-c57c-4ee2-9df2-c3f977dcfbaa",
+            "occurrences": 16149
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp4 | grep 'inet addr:'",
+                "duration": 0.014,
+                "executed": 1430253878.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253878.0,
+                "name": "ucarp-fcsis_ix_vif4-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "lovell.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "lovell.priv.example.com"
+                ],
+                "timestamp": 1430253863.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "e11a047c-36bb-4f54-8109-a117a27510c4",
+            "occurrences": 16149
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/system/check-disk.rb",
+                "duration": 0.144,
+                "executed": 1430253874.0,
+                "handlers": [
+                    "default"
+                ],
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253874.0,
+                "name": "disk",
+                "occurrences": 3,
+                "output": "CheckDisk WARNING: / 90%, / 90%\n",
+                "standalone": true,
+                "status": 1,
+                "subscribers": [
+                    "base",
+                    "system"
+                ],
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "marlonia.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "marlonia.priv.example.com"
+                ],
+                "timestamp": 1430253860.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "bb214d82-125b-4b2f-a56d-cb004029f1f1",
+            "occurrences": 20829
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-example/plugins/check-puppet-env.rb -w 1440 -c 10080",
+                "duration": 0.115,
+                "executed": 1430253870.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253870.0,
+                "name": "puppet-environment",
+                "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fijicsis], expected [production] for 8 days 11 hours 2 minutes 7 seconds\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "fijicsis01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "fijicsis01.priv.example.com"
+                ],
+                "timestamp": 1430253859.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "4a3ca63d-0bef-4519-ad1e-432d778dda14",
+            "occurrences": 421
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p '/usr/bin/puppet agent' -c 1",
+                "duration": 0.185,
+                "executed": 1430253853.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253853.0,
+                "name": "puppet-agent",
+                "occurrences": 3,
+                "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "handlers": [
+                        "high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "fijiproc02.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "fijiproc02.priv.example.com"
+                ],
+                "timestamp": 1430253848.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "5e65bfaf-bfae-4633-b161-abfafbfa9107",
+            "occurrences": 137
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-example/plugins/check-puppet-env.rb -w 1440 -c 10080",
+                "duration": 0.157,
+                "executed": 1430253655.0,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 300,
+                "issued": 1430253655.0,
+                "name": "puppet-environment",
+                "output": "CheckPuppetEnvironment WARNING: environment mismatch: is [haproxy_reload_service], expected [production] for 1 days 6 hours 25 minutes 0 seconds\n",
+                "standalone": true,
+                "status": 1,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "malur.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "malur.priv.example.com"
+                ],
+                "timestamp": 1430253641.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "560643be-548c-42ef-8a47-e9b10c69d11f",
+            "occurrences": 77
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/elasticsearch/check-es-cluster-status.rb",
+                "dependencies": [
+                    "disk"
+                ],
+                "duration": 0.472,
+                "executed": 1429014623.0,
+                "handlers": [
+                    "low"
+                ],
+                "history": [
+                    "3",
+                    "3",
+                    "3",
+                    "3",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 60,
+                "issued": 1429014623.0,
+                "name": "check-es-cluster-status",
+                "output": "ESClusterStatus CRITICAL: Connection refused\n",
+                "standalone": true,
+                "status": 2,
+                "subscribers": [
+                    "elasticsearch"
+                ],
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "handlers": [
+                        "high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "ix-fluentagg01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "ix-fluentagg01.priv.example.com"
+                ],
+                "timestamp": 1429014613.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "82497397-9cb7-467f-b3e0-23d115fd6ca5",
+            "occurrences": 10
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/elasticsearch/es-cluster-metrics.rb",
+                "duration": 0.494,
+                "executed": 1429014643.0,
+                "handlers": [
+                    "metrics"
+                ],
+                "history": [
+                    "3",
+                    "3",
+                    "3",
+                    "3",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1429014643.0,
+                "name": "es-cluster-metrics",
+                "output": "Connection refused\n",
+                "standalone": true,
+                "status": 1,
+                "subscribers": [
+                    "elasticsearch"
+                ],
+                "total_state_change": 0,
+                "type": "metric"
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "handlers": [
+                        "high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "ix-fluentagg01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "ix-fluentagg01.priv.example.com"
+                ],
+                "timestamp": 1429014633.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "ba72934a-9d41-43d0-9fc9-ae802a97c468",
+            "occurrences": 10
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/fluentd/check-fluentd-monitor-agent.rb -m buffer_queue_length -w 25 -c 100",
+                "dependencies": [
+                    "disk",
+                    "check-es-cluster-status"
+                ],
+                "duration": 0.265,
+                "executed": 1430253877.0,
+                "handlers": [
+                    "low"
+                ],
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 60,
+                "issued": 1430253877.0,
+                "name": "fluent-aggregator",
+                "output": "CheckFluentdMonitorAgent CRITICAL: plugin_id object:d3886c buffer_queue_length 101\n",
+                "standalone": true,
+                "status": 2,
+                "subscribers": [
+                    "logging",
+                    "monitoring"
+                ],
+                "tip": "Low priority - Fluents are prototype and large queues are part of the fun",
+                "total_state_change": 4
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "ix-fluentagg01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "ix-fluentagg01.priv.example.com"
+                ],
+                "timestamp": 1430253870.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "881f10e9-bede-4462-a0d9-5c6802843add",
+            "occurrences": 15
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p '/usr/bin/puppet agent' -c 1",
+                "duration": 0.283,
+                "executed": 1430253847.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253847.0,
+                "name": "puppet-agent",
+                "occurrences": 3,
+                "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "handlers": [
+                        "high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "fijiproc01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "fijiproc01.priv.example.com"
+                ],
+                "timestamp": 1430253835.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "b159b4af-6b53-423e-ae83-430acf093a4b",
+            "occurrences": 138
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp4 | grep 'inet addr:'",
+                "duration": 0.021,
+                "executed": 1430253877.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253877.0,
+                "name": "ucarp-fcsis_tc_vif4-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "stafford.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "stafford.priv.example.com"
+                ],
+                "timestamp": 1430253871.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "8149d4a2-cdb9-45b5-b3ed-2321ce24d3da",
+            "occurrences": 16131
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp2 | grep 'inet addr:'",
+                "duration": 0.024,
+                "executed": 1430253904.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253904.0,
+                "name": "ucarp-fcsis_tc_vif2-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "stafford.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "stafford.priv.example.com"
+                ],
+                "timestamp": 1430253891.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "c37ae22c-d807-4d95-a008-55153bba20f7",
+            "occurrences": 16134
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/system/check-disk.rb",
+                "duration": 0.158,
+                "executed": 1430253898.0,
+                "handlers": [
+                    "default"
+                ],
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253898.0,
+                "name": "disk",
+                "occurrences": 3,
+                "output": "CheckDisk WARNING: / 90%, / 90%\n",
+                "standalone": true,
+                "status": 1,
+                "subscribers": [
+                    "base",
+                    "system"
+                ],
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "malcor.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "malcor.priv.example.com"
+                ],
+                "timestamp": 1430253885.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "151fd3a0-8cd2-40bc-949e-2e32f97b3d14",
+            "occurrences": 29090
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/haproxy/check-haproxy.rb -S 127.0.0.1 -P :::haproxy_stats.port::: -u :::haproxy_stats.username::: -p :::haproxy_stats.password::: -w 76 -c 51 -e -s efs-mysql-cluster",
+                "duration": 0.397,
+                "executed": 1430253901.0,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253901.0,
+                "name": "efs-mysql-cluster",
+                "output": "CheckHAProxy WARNING: UP: 66% of 3 /efs-mysql-cluster/ services, DOWN: fornax\n",
+                "standalone": true,
+                "status": 1,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "scalos.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "scalos.priv.example.com"
+                ],
+                "timestamp": 1430253894.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "28260771-15cc-43b7-91d7-f0f4e9ac60fe",
+            "occurrences": 1687
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp2 | grep 'inet addr:'",
+                "duration": 0.013,
+                "executed": 1430253889.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253889.0,
+                "name": "ucarp-fte-vif4-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "dursley.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "dursley.priv.example.com"
+                ],
+                "timestamp": 1430253879.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "9ee8aa5e-8dc5-4ef6-921d-b45bee3ce0e8",
+            "occurrences": 20507
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/system/check-disk.rb",
+                "duration": 0.142,
+                "executed": 1430253894.0,
+                "handlers": [
+                    "default"
+                ],
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253894.0,
+                "name": "disk",
+                "occurrences": 3,
+                "output": "CheckDisk WARNING: / 87%, / 87%\n",
+                "standalone": true,
+                "status": 1,
+                "subscribers": [
+                    "base",
+                    "system"
+                ],
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "mariposa.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "mariposa.priv.example.com"
+                ],
+                "timestamp": 1430253887.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "c582d48e-eeea-4355-8a8d-38df90e5e943",
+            "occurrences": 9185
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp2 | grep 'inet addr:'",
+                "duration": 0.014,
+                "executed": 1430253903.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253903.0,
+                "name": "ucarp-fte-vif4-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "minchinhampton.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "minchinhampton.priv.example.com"
+                ],
+                "timestamp": 1430253898.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "53f18dc6-6522-4322-92e9-f13d3b1f7963",
+            "occurrences": 6456
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp1 | grep 'inet addr:'",
+                "duration": 0.013,
+                "executed": 1430253879.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253879.0,
+                "name": "ucarp-fte-vif3-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "mickleton.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "mickleton.priv.example.com"
+                ],
+                "timestamp": 1430253878.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "89eb4ef4-241a-4515-b9ed-4da3ed4f3697",
+            "occurrences": 6457
+        },
+        {
+            "acknowledged": true,
+            "action": "create",
+            "check": {
+                "aggregate": true,
+                "command": "/sbin/ifconfig eth1:ucarp1 | grep 'inet addr:'",
+                "duration": 0.011,
+                "executed": 1430253879.0,
+                "handle": false,
+                "history": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "interval": 60,
+                "issued": 1430253879.0,
+                "name": "ucarp-fte-vif3-interface",
+                "output": "",
+                "runbook": "http://download.pureftpd.org/ucarp/README",
+                "standalone": true,
+                "status": 1,
+                "tip": "Check if ucarp is in BACKUP by running kill -SIGUSR1 <pid> and looking at /var/log/syslog",
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "haproxy_stats": {
+                    "password": "REDACTED",
+                    "port": 1936,
+                    "username": "statsadmin"
+                },
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "dymock.some.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "dymock.priv.example.com"
+                ],
+                "timestamp": 1430253868.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "be8a6606-7ca3-4bf9-b256-661b29e5da69",
+            "occurrences": 18985
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-community/plugins/processes/check-procs.rb -p '/usr/bin/puppet agent' -c 1",
+                "duration": 0.196,
+                "executed": 1430253716.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253716.0,
+                "name": "puppet-agent",
+                "occurrences": 3,
+                "output": "CheckProcs CRITICAL: Found 0 matching processes; cmd //usr/bin/puppet agent/\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "handlers": [
+                        "high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "wiki01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "wiki01.priv.example.com"
+                ],
+                "timestamp": 1430253696.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "1b8eaa9a-f07a-4f14-8ce4-3963663237f6",
+            "occurrences": 123
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-example/plugins/check-puppet-env.rb -w 1440 -c 10080",
+                "duration": 0.099,
+                "executed": 1430253625.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253625.0,
+                "name": "puppet-environment",
+                "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fijicsis], expected [production] for 8 days 7 hours 25 minutes 26 seconds\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.254.254",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "fijicsis02.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "fijicsis02.priv.example.com"
+                ],
+                "timestamp": 1430253616.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "5d3ba68a-d274-4973-a9b3-f58bbc6136fd",
+            "occurrences": 378
+        },
+        {
+            "acknowledged": false,
+            "action": "create",
+            "check": {
+                "command": "/opt/sensu-example/plugins/check-puppet-env.rb -w 1440 -c 10080",
+                "duration": 0.119,
+                "executed": 1430253684.0,
+                "history": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ],
+                "interval": 300,
+                "issued": 1430253684.0,
+                "name": "puppet-environment",
+                "output": "CheckPuppetEnvironment CRITICAL: environment mismatch: is [fiji], expected [production] for 8 days 3 hours 50 minutes 47 seconds\n",
+                "standalone": true,
+                "status": 2,
+                "total_state_change": 0
+            },
+            "client": {
+                "acknowledged": false,
+                "address": "192.0.255.255",
+                "bind": "127.0.0.1",
+                "keepalive": {
+                    "custom": {
+                        "subdue": {
+                            "begin": "7PM UTC",
+                            "end": "7AM UTC"
+                        }
+                    },
+                    "handlers": [
+                        "slack-high"
+                    ],
+                    "thresholds": {
+                        "critical": 300,
+                        "warning": 60
+                    }
+                },
+                "name": "fijiredis01.priv.example.com",
+                "safe_mode": false,
+                "subscriptions": [
+                    "fijiredis01.priv.example.com"
+                ],
+                "timestamp": 1430253677.0,
+                "version": "0.17.2"
+            },
+            "dc": "Co-Lo",
+            "id": "d0f0e19d-ec26-465e-9038-e77f5496ffec",
+            "occurrences": 335
+        }
+    ],
+    "Stashes": [
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/schirra.priv.example.com/ucarp-fcsis_tc_vif1-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/schirra.priv.example.com/ucarp-fcsis_tc_vif3-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg01.priv.example.com/es-cluster-metrics"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg01.priv.example.com/disk"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg02.priv.example.com/disk"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg02.priv.example.com/es-cluster-metrics"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1427205821.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/malcor.priv.example.com/disk"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg01.priv.example.com/fluent-aggregator"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg02.priv.example.com/fluent-aggregator"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1427205821.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/malaya.priv.example.com/disk"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/lovell.priv.example.com/ucarp-fcsis_ix_vif1-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/lovell.priv.example.com/ucarp-fcsis_ix_vif2-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/stafford.priv.example.com/ucarp-fcsis_tc_vif2-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/lovell.priv.example.com/ucarp-fcsis_ix_vif3-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/lovell.priv.example.com/ucarp-fcsis_ix_vif4-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/stafford.priv.example.com/ucarp-fcsis_tc_vif4-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/minchinhampton.priv.example.com/ucarp-fte-vif4-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg01.priv.example.com/check-es-cluster-status"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/mickleton.priv.example.com/ucarp-fte-vif3-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1429185096.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/ix-fluentagg02.priv.example.com/check-es-cluster-status"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/dymock.priv.example.com/ucarp-fte-vif3-interface"
+        },
+        {
+            "content": {
+                "reason": "",
+                "source": "uchiwa",
+                "timestamp": 1430216624.0
+            },
+            "dc": "Co-Lo",
+            "expire": -1,
+            "path": "silence/dursley.priv.example.com/ucarp-fte-vif4-interface"
+        }
+    ],
+    "Subscriptions": [
+        "yalosian.priv.example.com",
+        "kilcot.priv.example.com",
+        "rochanie.priv.example.com",
+        "schirra.priv.example.com",
+        "ix-fluentagg02.priv.example.com",
+        "delvos.priv.example.com",
+        "lovell.priv.example.com",
+        "newnham.priv.example.com",
+        "ix-uchiwa01.priv.example.com",
+        "marlonia.priv.example.com",
+        "malaya.priv.example.com",
+        "fijicsis01.priv.example.com",
+        "yadera.priv.example.com",
+        "efsproc04.priv.example.com",
+        "conrad.priv.example.com",
+        "fijiproc02.priv.example.com",
+        "efsproc08.priv.example.com",
+        "malur.priv.example.com",
+        "luxley.priv.example.com",
+        "ix-carbon02.priv.example.com",
+        "runara.priv.example.com",
+        "ix-fluentagg01.priv.example.com",
+        "mariah.priv.example.com",
+        "efsproc03.priv.example.com",
+        "rousseau.priv.example.com",
+        "fijiproc01.priv.example.com",
+        "rubicun.priv.example.com",
+        "stafford.priv.example.com",
+        "efsproc07.priv.example.com",
+        "torad.priv.example.com",
+        "malcor.priv.example.com",
+        "halee.priv.example.com",
+        "ix-graphiteweb01.priv.example.com",
+        "ix-carbon01.priv.example.com",
+        "scalos.priv.example.com",
+        "lydbrook.priv.example.com",
+        "zayra.priv.example.com",
+        "lypiatt.priv.example.com",
+        "dursley.priv.example.com",
+        "ruah.priv.example.com",
+        "dyomin.priv.example.com",
+        "mechanus.priv.example.com",
+        "efsproc02.priv.example.com",
+        "opkins.priv.example.com",
+        "lydney.priv.example.com",
+        "efsproc06.priv.example.com",
+        "endor.priv.example.com",
+        "mariposa.priv.example.com",
+        "minchinhampton.priv.example.com",
+        "ix-sensu02.priv.example.com",
+        "komarov.priv.example.com",
+        "jiak.priv.example.com",
+        "nel.priv.example.com",
+        "savitskaya.priv.example.com",
+        "ix-rmq02.priv.example.com",
+        "zed.priv.example.com",
+        "grechko.priv.example.com",
+        "mickleton.priv.example.com",
+        "dymock.priv.example.com",
+        "mari.priv.example.com",
+        "fenton.priv.example.com",
+        "brax.priv.example.com",
+        "kemble.priv.example.com",
+        "manu.priv.example.com",
+        "efsproc01.priv.example.com",
+        "zephon.priv.example.com",
+        "wiki01.priv.example.com",
+        "fijicsis02.priv.example.com",
+        "efsproc05.priv.example.com",
+        "yadalla.priv.example.com",
+        "gagarin.priv.example.com",
+        "fijiredis01.priv.example.com",
+        "efsproc09.priv.example.com",
+        "tereshkova.priv.example.com",
+        "ix-sensu01.priv.example.com",
+        "ix-rmq01.priv.example.com"
+    ]
+}
