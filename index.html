@@ -33,22 +33,10 @@
       $(function(){
 
         gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [30, 30],
-          widget_margins: [2, 2],
+          widget_base_dimensions: [40, 40],
+          widget_margins: [5, 5],
           helper: 'clone'
         }).data('gridster');
-
-
-        // resize widgets on hover
-        gridster.$el
-          .on('mouseenter', '> li', function() {
-              gridster.resize_widget($(this), 3, 3);
-              $(this).toggleClass('error');
-          })
-          .on('mouseleave', '> li', function() {
-              gridster.resize_widget($(this), 1, 1);
-              $(this).toggleClass('error')
-          });
 
 
         $.getJSON( "data/sensu.test.json", function() {
