@@ -53,8 +53,11 @@
                   var events = [];
                   if (client.status > 0){
                     events = jQuery.grep(data.Events, function(n,i){
-                      return (n.client.name == client.name);
+                      // Only return checks for this client, that are handled
+                      return (n.client.name == client.name && n.check.handle !== false);
                     });
+                    // If there are no handled events, the server is actually ok in disguises
+                    if (events.length == 0){ size = 1 }
                   }
                   eventList = '</br><ul class="checks">' + $.map(events, function(val, index){
                       return '<li>' + val.check.name + '</li>'; 
