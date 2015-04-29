@@ -14,7 +14,6 @@ ul {
 .status-1 { /* OK */
  border-left: 5px solid  #44CC44 !important;
  background-color: rgb(200,255,200);
-
 }
 
 .status-2 { /* WARN */
@@ -33,9 +32,27 @@ ul {
     background-color: #EEEEEE;
 }
 
-.checks li{
-    border-top: 1px solid black ;
-    font-size: 1.2em;
+.status h2 {
+   white-space: nowrap; 
+   background-color: rgba(255,255,255,0.5);
+   padding: 3px;
+   border-bottom: 1px solid black;
+}
+
+.status-1 h2 { font-size: 0.8em; }
+.status-2 h2 { font-size: 1.0em; }
+.status-3 h2 { font-size: 1.2em; }
+.status-4 h2 { font-size: 1.4em; }
+
+.checks .output{
+    display: block;
+    margin-left: 1em;
+    font-size: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
 }
 
 /*/
@@ -47,7 +64,7 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #444;
-    margin: 30px 40px;
+    margin: 20px 20px;
 }
 
 .controls {
@@ -59,18 +76,13 @@ body {
 /*/
 
 .gridster li {
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    line-height: 100%;
+    line-height: 110%;
     overflow:hidden;
     text-overflow: ellipsis;
 }
 
-
 .gridster {
     margin: 0 auto;
-
     opacity: .8;
 
     -webkit-transition: opacity .6s;
@@ -91,6 +103,6 @@ body {
 
 .gridster .preview-holder {
     border: none!important;
-    background: red!important;
+    background: gray!important;
 }
 

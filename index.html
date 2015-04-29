@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -9,10 +8,9 @@
 
 <body>
 
-  <h1>Dashboard</h1>
+  <h1>Dashboard <span id='headline-count'></span></h1>
 
-  <p>Each box below represents a server</p>
-  <p id='last-updated'></p>
+  <p>Each box below represents a server <span id='last-updated'></span> </p>
 
   <div class="gridster">
     <ul>
@@ -47,6 +45,7 @@
           })
             .done(function(data) {
               clients = data.Clients;
+              $('#headline-count').text( '- ' + clients.length + ' hosts');
               gridster.remove_all_widgets();
               $.each( clients, function( i, client ) {
                   size =  client.status+1;
@@ -59,12 +58,13 @@
                     // If there are no handled events, the server is actually ok in disguises
                     if (events.length == 0){ size = 1 }
                   }
-                  eventList = '</br><ul class="checks">' + $.map(events, function(val, index){
-                      return '<li>' + val.check.name + '</li>'; 
+                  eventList = '<ul class="checks">' + $.map(events, function(val, index){
+                      return '<li>' + val.check.name + 
+                                '<span class="output">' + val.check.output + '</span></li>'; 
                   }).join('\n') + '</ul>';
 
-                  widget = gridster.add_widget.apply(gridster, ['<li>' + client.name + eventList + '</li>', size,size]);
-                  widget.toggleClass('status-' + size);
+                  widget = gridster.add_widget.apply(gridster, ['<li><h2>' + client.name +'</h2>' + eventList + '</li>', size,size]);
+                  widget.toggleClass('status status-' + size);
                 });
             })
             .fail(function() {
