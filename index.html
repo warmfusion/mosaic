@@ -12,6 +12,7 @@
   <h1>Dashboard</h1>
 
   <p>Each box below represents a server</p>
+  <p id='last-updated'></p>
 
   <div class="gridster">
     <ul>
@@ -33,29 +34,47 @@
       $(function(){
 
         gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [40, 40],
+          widget_base_dimensions: [90, 90],
           widget_margins: [5, 5],
           helper: 'clone'
         }).data('gridster');
 
+        var endpoint = "data/sensu.test.json";
 
-        $.getJSON( "data/sensu.test.json", function() {
-          console.log( "success" );
-        })
-          .done(function(data) {
-            clients = data.Clients;
-            $.each( clients, function( i, client ) {
-                size =  client.status+1;
-                widget = gridster.add_widget.apply(gridster, ['<li>' + client.name + '</li>', size,size]);
-                widget.toggleClass('status-' + size);
-              });
+        function updateGrid(){
+          $.getJSON( endpoint, function() {
+            //console.log( "success" );
           })
-          .fail(function() {
-            console.log( "error" );
-          })
-          .always(function() {
-            console.log( "complete" );
-          });
+            .done(function(data) {
+              clients = data.Clients;
+              gridster.remove_all_widgets();
+              $.each( clients, function( i, client ) {
+                  size =  client.status+1;
+                  var events = [];
+                  if (client.status > 0){
+                    events = jQuery.grep(data.Events, function(n,i){
+                      return (n.client.name == client.name);
+                    });
+                  }
+                  eventList = '</br><ul class="checks">' + $.map(events, function(val, index){
+                      return '<li>' + val.check.name + '</li>'; 
+                  }).join('\n') + '</ul>';
+
+                  widget = gridster.add_widget.apply(gridster, ['<li>' + client.name + eventList + '</li>', size,size]);
+                  widget.toggleClass('status-' + size);
+                });
+            })
+            .fail(function() {
+              console.log( "error" );
+            })
+            .always(function() {
+              //console.log( "complete" );
+              $('#last-updated').text('Last Updated ' + new Date())
+            });
+          }
+
+          setInterval(updateGrid, 5*60*1000);
+          updateGrid();
       });
     </script>
 </body>
