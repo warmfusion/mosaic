@@ -37,7 +37,19 @@
           helper: 'clone'
         }).data('gridster');
 
-        var endpoint = "data/sensu.test.json";
+        /** Convert the search string into a useful object for our Options
+             From http://stackoverflow.com/a/27691108 */
+        function searchToObject(search) {
+          return search.substring(1).split("&").reduce(function(result, value) {
+            var parts = value.split('=');
+            if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+            return result;
+          }, {})
+        }
+
+        opts = searchToObject(window.location.search);
+
+        var endpoint = (typeof opts.url !== 'undefined') ? opts.url : "data/sensu.test.json";
 
         function updateGrid(){
           $.getJSON( endpoint, function() {
