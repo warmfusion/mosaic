@@ -11,14 +11,20 @@
   <h1>Dashboard <span id='headline-count'></span></h1>
 
   <p>Each box below represents a server <span id='last-updated'></span> </p>
+<div id="sorts" class="button-group">
+  <button data-sort-by="original-order">original order</button>
+  <button data-sort-by="name">name</button>
+  <button data-sort-by="symbol">symbol</button>
+  <button data-sort-by="number">number</button>
+  <button data-sort-by="weight">weight</button>
+  <button data-sort-by="category">category</button>
+</div>
 
-  <div class="gridster">
-    <ul>
-    </ul>
+  <div id="grid">
   </div>
 
     <script type="text/javascript" src="assets/jquery.js"></script>
-    <script src="assets/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
         function getRandomInt(min, max) {
@@ -27,15 +33,30 @@
     </script>
 
     <script type="text/javascript">
-      var gridster;
 
       $(function(){
 
-        gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [90, 90],
-          widget_margins: [5, 5],
-          helper: 'clone'
-        }).data('gridster');
+        var $container = $('#grid');
+        // init
+        // init Isotope
+        var $container = $container.isotope({
+          itemSelector: '.item',
+          getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+            weight: function( itemElem ) {
+              var weight = $( itemElem ).find('.weight').text();
+              return parseFloat( weight.replace( /[\(\)]/g, '') );
+            }
+          }
+        });
+        // sort items on button click
+        $('#sorts').on( 'click', 'button', function() {
+          var sortByValue = $(this).attr('data-sort-by');
+          $container.isotope({ sortBy: sortByValue });
+        });
 
         /** Convert the search string into a useful object for our Options
              From http://stackoverflow.com/a/27691108 */
@@ -58,7 +79,7 @@
             .done(function(data) {
               clients = data.Clients;
               $('#headline-count').text( '- ' + clients.length + ' hosts');
-              gridster.remove_all_widgets();
+
               $.each( clients, function( i, client ) {
                   size =  client.status+1;
                   var events = [];
@@ -75,7 +96,7 @@
                                 '<span class="output">' + val.check.output + '</span></li>'; 
                   }).join('\n') + '</ul>';
 
-                  widget = gridster.add_widget.apply(gridster, ['<li><h2>' + client.name +'</h2>' + eventList + '</li>', size,size]);
+                  widget = $container.append('<div class="item"><h2>' + client.name +'</h2>' + eventList + '</div>');
                   widget.toggleClass('status status-' + size);
                 });
             })
