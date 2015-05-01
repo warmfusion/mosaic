@@ -73,7 +73,10 @@
             .done(function(data) {
 
               var $container = $('#grid');
-        
+              // Remove the elements...
+              //TODO: work out how to refresh existing rather than replace
+              $container.isotope( 'remove', $container.isotope('getItemElements'));
+
               clients = data.Clients;
               $('#headline-count').text( '- ' + clients.length + ' hosts');
 
@@ -108,7 +111,7 @@
             });
           }
 
-          setInterval(updateGrid, 5*60*1000);
+          setInterval(updateGrid, 30000);
           updateGrid();
       });
     </script>
