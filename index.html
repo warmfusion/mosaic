@@ -11,14 +11,12 @@
   <h1>Dashboard <span id='headline-count'></span></h1>
 
   <p>Each box below represents a server <span id='last-updated'></span> </p>
-<div id="sorts" class="button-group">
-  <button data-sort-by="original-order">original order</button>
-  <button data-sort-by="name">name</button>
-  <button data-sort-by="symbol">symbol</button>
-  <button data-sort-by="number">number</button>
-  <button data-sort-by="weight">weight</button>
-  <button data-sort-by="category">category</button>
-</div>
+
+  <div id="sorts" class="button-group">
+    <button data-sort-by="original-order">original order</button>
+    <button data-sort-by="status">status</button>
+    <button data-sort-by="name">name</button>
+  </div>
 
   <div id="grid">
   </div>
@@ -27,46 +25,42 @@
     <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-    </script>
 
-    <script type="text/javascript">
 
-      $(function(){
 
-        var $container = $('#grid');
-        // init
-        // init Isotope
-        var $container = $container.isotope({
+      /** Convert the search string into a useful object for our Options
+           From http://stackoverflow.com/a/27691108 */
+      function searchToObject(search) {
+        return search.substring(1).split("&").reduce(function(result, value) {
+          var parts = value.split('=');
+          if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+          return result;
+        }, {})
+      }
+      var $container = $('#grid');
+
+      $container.isotope({
           itemSelector: '.item',
+          layoutMode: 'masonry',
           getSortData: {
             name: '.name',
-            symbol: '.symbol',
-            number: '.number parseInt',
-            category: '[data-category]',
-            weight: function( itemElem ) {
-              var weight = $( itemElem ).find('.weight').text();
-              return parseFloat( weight.replace( /[\(\)]/g, '') );
-            }
+            status: '.status'
+          },
+            sortAscending: {
+            name: true,
+            status: false,
           }
-        });
-        // sort items on button click
-        $('#sorts').on( 'click', 'button', function() {
-          var sortByValue = $(this).attr('data-sort-by');
-          $container.isotope({ sortBy: sortByValue });
-        });
+      });
 
-        /** Convert the search string into a useful object for our Options
-             From http://stackoverflow.com/a/27691108 */
-        function searchToObject(search) {
-          return search.substring(1).split("&").reduce(function(result, value) {
-            var parts = value.split('=');
-            if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-            return result;
-          }, {})
-        }
+      // sort items on button click
+      $('#sorts').on( 'click', 'button', function() {
+        var sortByValue = $(this).attr('data-sort-by');
+        $container.isotope({ sortBy: sortByValue });
+      });
+
+
+
+      $(function(){
 
         opts = searchToObject(window.location.search);
 
@@ -77,6 +71,9 @@
             //console.log( "success" );
           })
             .done(function(data) {
+
+              var $container = $('#grid');
+        
               clients = data.Clients;
               $('#headline-count').text( '- ' + clients.length + ' hosts');
 
@@ -96,8 +93,10 @@
                                 '<span class="output">' + val.check.output + '</span></li>'; 
                   }).join('\n') + '</ul>';
 
-                  widget = $container.append('<div class="item"><h2>' + client.name +'</h2>' + eventList + '</div>');
-                  widget.toggleClass('status status-' + size);
+                  var he = '<h2 class="name">' + client.name +'</h2>'
+                  var st = '<div style="display:none" class="status">' + client.status + '</div>'
+
+                  widget = $container.isotope('insert', $('<div class="item status-' + size +'">' + he  + st + eventList + '</div>'));
                 });
             })
             .fail(function() {
@@ -105,7 +104,7 @@
             })
             .always(function() {
               //console.log( "complete" );
-              $('#last-updated').text('Last Updated ' + new Date())
+              $('#last-updated').text('Last Updated ' + new Date());
             });
           }
 
