@@ -12,40 +12,55 @@
 
   <p>Each box below represents a server <span id='last-updated'></span> </p>
 
-  <div class="gridster">
-    <ul>
-    </ul>
+  <div id="sorts" class="button-group">
+    <button data-sort-by="original-order">original order</button>
+    <button data-sort-by="status">status</button>
+    <button data-sort-by="name">name</button>
+  </div>
+
+  <div id="grid">
   </div>
 
     <script type="text/javascript" src="assets/jquery.js"></script>
-    <script src="assets/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-    </script>
 
-    <script type="text/javascript">
-      var gridster;
+
+
+      /** Convert the search string into a useful object for our Options
+           From http://stackoverflow.com/a/27691108 */
+      function searchToObject(search) {
+        return search.substring(1).split("&").reduce(function(result, value) {
+          var parts = value.split('=');
+          if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+          return result;
+        }, {})
+      }
+      var $container = $('#grid');
+
+      $container.isotope({
+          itemSelector: '.item',
+          layoutMode: 'masonry',
+          getSortData: {
+            name: '.name',
+            status: '.status'
+          },
+            sortAscending: {
+            name: true,
+            status: false,
+          }
+      });
+
+      // sort items on button click
+      $('#sorts').on( 'click', 'button', function() {
+        var sortByValue = $(this).attr('data-sort-by');
+        $container.isotope({ sortBy: sortByValue });
+      });
+
+
 
       $(function(){
-
-        gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [90, 90],
-          widget_margins: [5, 5],
-          helper: 'clone'
-        }).data('gridster');
-
-        /** Convert the search string into a useful object for our Options
-             From http://stackoverflow.com/a/27691108 */
-        function searchToObject(search) {
-          return search.substring(1).split("&").reduce(function(result, value) {
-            var parts = value.split('=');
-            if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-            return result;
-          }, {})
-        }
 
         opts = searchToObject(window.location.search);
 
@@ -56,9 +71,15 @@
             //console.log( "success" );
           })
             .done(function(data) {
+
+              var $container = $('#grid');
+              // Remove the elements...
+              //TODO: work out how to refresh existing rather than replace
+              $container.isotope( 'remove', $container.isotope('getItemElements'));
+
               clients = data.Clients;
               $('#headline-count').text( '- ' + clients.length + ' hosts');
-              gridster.remove_all_widgets();
+
               $.each( clients, function( i, client ) {
                   size =  client.status+1;
                   var events = [];
@@ -75,8 +96,10 @@
                                 '<span class="output">' + val.check.output + '</span></li>'; 
                   }).join('\n') + '</ul>';
 
-                  widget = gridster.add_widget.apply(gridster, ['<li><h2>' + client.name +'</h2>' + eventList + '</li>', size,size]);
-                  widget.toggleClass('status status-' + size);
+                  var he = '<h2 class="name">' + client.name +'</h2>'
+                  var st = '<div style="display:none" class="status">' + client.status + '</div>'
+
+                  widget = $container.isotope('insert', $('<div class="item status-' + size +'">' + he  + st + eventList + '</div>'));
                 });
             })
             .fail(function() {
@@ -84,11 +107,11 @@
             })
             .always(function() {
               //console.log( "complete" );
-              $('#last-updated').text('Last Updated ' + new Date())
+              $('#last-updated').text('Last Updated ' + new Date());
             });
           }
 
-          setInterval(updateGrid, 5*60*1000);
+          setInterval(updateGrid, 30000);
           updateGrid();
       });
     </script>
