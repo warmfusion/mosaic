@@ -1,39 +1,58 @@
-.gridster * {
-  margin:0;
-  padding:0;
-}
+
 
 ul {
   list-style-type: none;
+  margin:  0;
+  padding: 0;
 }
 
+.item{
+  width:  100px;
+  height: 100px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  margin: 5px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.item h2 {
+   margin:0;
+}
 #last-updated{
-    font-size:0.7em;
+  font-size:0.7em;
 }
 
 .status-1 { /* OK */
- border-left: 5px solid  #44CC44 !important;
- background-color: rgb(200,255,200);
+  border-left: 5px solid  #44CC44 !important;
+  background-color: rgb(200,255,200);
+  width:  100px;
+  height: 100px;
 }
 
 .status-2 { /* WARN */
   border-left: 5px solid rgb(249, 186, 70) !important;
-   background-color: rgb(255,240,120);
-
+  background-color: rgb(255,240,120);
+  width:  210px;
+  height: 210px; 
 }
 
 .status-3 { /* CRITICAL */
- border-left: 5px solid rgb(234, 84, 67) !important;
- background-color: rgb(255,160,120);
+  border-left: 5px solid rgb(234, 84, 67) !important;
+  background-color: rgb(255,160,120);
+  width:  320px;
+  height: 320px;
 }
 
 .status-4 { /* UNKNOWN */
-    border-left: 5px solid  #AAAAAA !important;
-    background-color: #EEEEEE;
+  border-left: 5px solid  #AAAAAA !important;
+  background-color: #EEEEEE;
 }
 
 .status h2 {
-   white-space: nowrap; 
    background-color: rgba(255,255,255,0.5);
    padding: 3px;
    border-bottom: 1px solid black;
@@ -55,10 +74,6 @@ ul {
     width: 100%;
 }
 
-/*/
-/* demo
-/*/
-
 
 body {
     font-size: 16px;
@@ -66,43 +81,3 @@ body {
     color: #444;
     margin: 20px 20px;
 }
-
-.controls {
-    margin-bottom: 20px;
-}
-
-/*/
-/* gridster
-/*/
-
-.gridster li {
-    line-height: 110%;
-    overflow:hidden;
-    text-overflow: ellipsis;
-}
-
-.gridster {
-    margin: 0 auto;
-    opacity: .8;
-
-    -webkit-transition: opacity .6s;
-    -moz-transition: opacity .6s;
-    -o-transition: opacity .6s;
-    -ms-transition: opacity .6s;
-    transition: opacity .6s;
-}
-
-.gridster .gs-w {
-    cursor: pointer;
-}
-
-.gridster .player {
-    background: #BBB;
-}
-
-
-.gridster .preview-holder {
-    border: none!important;
-    background: gray!important;
-}
-
