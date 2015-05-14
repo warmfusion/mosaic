@@ -58,6 +58,7 @@
   </div>
 
     <script type="text/javascript" src="assets/jquery.js"></script>
+    <script type="text/javascript" src="assets/jquery.parseparams.js"></script>
     <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
@@ -73,6 +74,15 @@
           return result;
         }, {})
       }
+
+      function getHashFilter() {
+        var hash = location.hash.substring(1);
+        // get filter=filterName
+        return $.parseParams( hash );
+      }
+
+
+
       var $container = $('#grid');
 
       $container.isotope({
@@ -110,9 +120,9 @@
         for ( var prop in filters ) {
           filterValue += filters[ prop ];
         }
-
-        // set filter for Isotope
-        $container.isotope({ filter: filterValue });
+        // This'll trigger a onHashChange event causing a grid filter
+        location.hash = $.param(filters) ;
+ 
       });
 
       // change is-checked class on buttons
@@ -188,6 +198,41 @@
 
           setInterval(updateGrid, 30000);
           updateGrid();
+
+          var isIsotopeInit = false;
+
+          function onHashchange() {
+            var hashFilter = getHashFilter();
+            if ( !hashFilter && isIsotopeInit ) {
+              return;
+            }
+            isIsotopeInit = true;
+            // filter isotope
+
+            //Uncheck all the things
+            $('.filters').find('.is-checked').removeClass('is-checked');
+            $('.filters').find('[data-filter=""]').removeClass('is-checked');
+
+            // combine filters
+            var filterValue = '';
+            for ( var prop in hashFilter ) {
+              filterValue += hashFilter[ prop ];
+              //Re-Select the things that are selected
+              if ( hashFilter[prop] != '') { //Ignore the 'any' option as its 'Empty'
+                $('.filters').find('[data-filter="' + hashFilter[prop] + '"]').addClass('is-checked');
+              }
+            }
+
+            $container.isotope({
+              itemSelector: '.item',
+              filter: filterValue
+            });
+          }
+
+          $(window).on( 'hashchange', onHashchange );
+          // trigger event handler to init Isotope
+          onHashchange();
+
       });
     </script>
 </body>
