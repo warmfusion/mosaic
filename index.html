@@ -7,15 +7,52 @@
 
 <body>
 
-  <h1>Dashboard <span id='headline-count'></span></h1>
+  <h2>Dashboard <span id='headline-count'></span> <span id='last-updated'></span></h2>
+<div class='control'>
 
-  <p>Each box below represents a server <span id='last-updated'></span> </p>
-
-  <div id="sorts" class="button-group">
-    <button data-sort-by="original-order">original order</button>
-    <button data-sort-by="status">status</button>
-    <button data-sort-by="name">name</button>
+  <div id="sorts" class="button-group js-radio-button-group">
+    <button class="button is-checked" data-sort-by="original-order">No Order</button>
+    <button class="button" data-sort-by="status">Status</button>
+    <button class="button" data-sort-by="name">Name</button>
   </div>
+
+  <span class="filters">
+
+    <div class="button-group js-radio-button-group" data-filter-group="status">
+      <button class="button is-checked" data-filter="">Any</button>
+      <button class="button" data-filter=".status-1">Ok</button>
+      <button class="button" data-filter=":not(.status-1)">Not-Ok</button>
+      <button class="button" data-filter=".status-2">Warning</button>
+      <button class="button" data-filter=".status-3">Critical</button>
+      <button class="button" data-filter=".status-4">Unknown</button>
+    </div>
+
+  <!-- TODO: Make the rest of this whole block dynamic based on the 'tags' attribute of the clients -->
+    <div class="button-group js-radio-button-group" data-filter-group="product">
+      <button class="button is-checked" data-filter="">Any</button>
+      <button class="button" data-filter=".efs">EFS</button>
+      <button class="button" data-filter=".fie">Fie</button>
+      <button class="button" data-filter=".foxtrot">Foxtrot</button>
+    </div>
+
+    <div class="button-group js-radio-button-group" data-filter-group="role">
+      <button class="button is-checked" data-filter="">Any</button>
+      <button class="button" data-filter=".webserver">WebServer</button>
+      <button class="button" data-filter=".haproxy">HAproxy</button>
+      <button class="button" data-filter=".database">Database</button>
+    </div>
+
+    <div class="button-group js-radio-button-group" data-filter-group="env">
+      <button class="button is-checked" data-filter="">Any</button>
+      <button class="button" data-filter=".live">Live</button>
+      <button class="button" data-filter=".stage">Staging</button>
+      <button class="button" data-filter=".dev">Dev</button>
+      <button class="button" data-filter=":not(.live)">Not Live</button> <!-- example -->
+    </div>
+
+  </span>
+
+</div>
 
   <div id="grid">
   </div>
@@ -58,6 +95,34 @@
       });
 
 
+      // store filter for each group
+      var filters = {};
+
+      $('.filters').on( 'click', '.button', function() {
+        var $this = $(this);
+        // get group key
+        var $buttonGroup = $this.parents('.button-group');
+        var filterGroup = $buttonGroup.attr('data-filter-group');
+        // set filter for group
+        filters[ filterGroup ] = $this.attr('data-filter');
+        // combine filters
+        var filterValue = '';
+        for ( var prop in filters ) {
+          filterValue += filters[ prop ];
+        }
+
+        // set filter for Isotope
+        $container.isotope({ filter: filterValue });
+      });
+
+      // change is-checked class on buttons
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
 
       $(function(){
 
@@ -95,10 +160,21 @@
                                 '<span class="output">' + val.check.output + '</span></li>'; 
                   }).join('\n') + '</ul>';
 
-                  var he = '<h2 class="name">' + client.name +'</h2>'
-                  var st = '<div style="display:none" class="status">' + client.status + '</div>'
+                  var he = '<h2 class="name">' + client.name +'</h2>';
 
-                  widget = $container.isotope('insert', $('<div class="item status-' + size +'">' + he  + st + eventList + '</div>'));
+                  var tagmeta = '';
+                  var tagclass = '';
+                  if ( client.tags != undefined ){
+                    $.each(client.tags, function( key, value ) {
+                      tagmeta  = tagmeta  + '<div style="display:none" class="' + key + '">' + value + '</div>';
+                      tagclass = tagclass + ' ' + value;
+
+                    });
+                  }
+                  var st = '<div style="display:none" class="status">' + client.status + '</div>';
+
+
+                  widget = $container.isotope('insert', $('<div class="item status-' + size +' ' + tagclass +'">' + he + tagmeta + st + eventList + '</div>'));
                 });
             })
             .fail(function() {
