@@ -26,29 +26,8 @@
       <button class="button" data-filter=".status-3">Critical</button>
       <button class="button" data-filter=".status-4">Unknown</button>
     </div>
-
-  <!-- TODO: Make the rest of this whole block dynamic based on the 'tags' attribute of the clients -->
-    <div class="button-group js-radio-button-group" data-filter-group="product">
-      <button class="button is-checked" data-filter="">Any</button>
-      <button class="button" data-filter=".efs">EFS</button>
-      <button class="button" data-filter=".fie">Fie</button>
-      <button class="button" data-filter=".foxtrot">Foxtrot</button>
-    </div>
-
-    <div class="button-group js-radio-button-group" data-filter-group="role">
-      <button class="button is-checked" data-filter="">Any</button>
-      <button class="button" data-filter=".webserver">WebServer</button>
-      <button class="button" data-filter=".haproxy">HAproxy</button>
-      <button class="button" data-filter=".database">Database</button>
-    </div>
-
-    <div class="button-group js-radio-button-group" data-filter-group="env">
-      <button class="button is-checked" data-filter="">Any</button>
-      <button class="button" data-filter=".live">Live</button>
-      <button class="button" data-filter=".stage">Staging</button>
-      <button class="button" data-filter=".dev">Dev</button>
-      <button class="button" data-filter=":not(.live)">Not Live</button> <!-- example -->
-    </div>
+  <!-- Dynamically built with the buildTagFilters function -->
+  <span id='tagfilters' style='margin:0;padding:0;display:block'/>
 
   </span>
 
@@ -58,6 +37,7 @@
   </div>
 
     <script type="text/javascript" src="assets/jquery.js"></script>
+    <script type="text/javascript" src="assets/mergearray.js"></script>
     <script type="text/javascript" src="assets/jquery.parseparams.js"></script>
     <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
@@ -81,8 +61,19 @@
         return $.parseParams( hash );
       }
 
-
-
+      var buttons_built = false;
+      function buildTagFilters(tags){
+        if (buttons_built){ return };
+        for (var k in tags){
+          $('#tagfilters').append('<div id="filter-'+ k + '" class="button-group js-radio-button-group" data-filter-group="' + k +'">');
+          $('#filter-'+k).append('<button class="button is-checked" data-filter="">Any</button>')  
+          for (var idx in tags[k]){
+            $('#filter-'+k).append('<button class="button" data-filter=".' + tags[k][idx] +'">' +tags[k][idx] + '</button>')
+          }
+        }
+        buttons_built = true;
+      }
+      var knowntags = new Array();
       var $container = $('#grid');
 
       $container.isotope({
@@ -145,7 +136,7 @@
             //console.log( "success" );
           })
             .done(function(data) {
-
+              knowntags = new Array();
               var $container = $('#grid');
               // Remove the elements...
               //TODO: work out how to refresh existing rather than replace
@@ -156,6 +147,7 @@
 
               $.each( clients, function( i, client ) {
                   size =  client.status+1;
+                  knowntags = mergetags(knowntags, toArray(client.tags));
                   var events = [];
                   if (client.status > 0){
                     events = jQuery.grep(data.Events, function(n,i){
@@ -186,6 +178,7 @@
 
                   widget = $container.isotope('insert', $('<div class="item status-' + size +' ' + tagclass +'">' + he + tagmeta + st + eventList + '</div>'));
                 });
+                buildTagFilters(knowntags);
             })
             .fail(function() {
               console.log( "error" );
