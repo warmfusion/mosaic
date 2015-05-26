@@ -147,7 +147,9 @@
 
               $.each( clients, function( i, client ) {
                   size =  client.status+1;
-                  knowntags = mergetags(knowntags, toArray(client.tags));
+                  if (!buttons_built){ // only create the known tags if weve not built filters yet - its quite heavy
+                    knowntags = mergetags(knowntags, toArray(client.tags));
+                  }
                   var events = [];
                   if (client.status > 0){
                     events = jQuery.grep(data.Events, function(n,i){
