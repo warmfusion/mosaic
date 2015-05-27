@@ -22,3 +22,23 @@ Add `?url=<your_uchiwa_host>/get_sensu` to select where the dashboard will consu
 Run a test webserver and access it on http://localhost:9090
 
     ruby -run -e httpd . -p 9090
+
+
+# Extra Features
+
+The buttons along the top are populated by looking for a 'tags' hash in each clients custom configuration.
+
+This allows you to create filters of the servers based on any criteria you setup.
+
+For example, by adding the following json to your sensu client.json file you'll get a new button bar for that servers favourite colour:
+
+```
+{
+  "client": {
+    ...
+    "tags": {
+      "colour": "taupe",
+    }
+  }
+}
+```
