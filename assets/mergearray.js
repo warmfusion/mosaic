@@ -1,40 +1,31 @@
-var mergetags = function(a,b){
-    // result object
-    var result = {};
-    
-    // tokenize
-    for (var name in a) {
-        result[name] = tokenize(a[name]);
-    }
-    
-    for (var name in b) {
-        if (result[name]) {
-            result[name].push.apply(result[name], tokenize(b[name]));
-        } else {
-            result[name] = tokenize(b[name]);
-        }
-    }
-    
-    for (var name in result) {
-        result[name] = result[name].filter(function (value, index, self) {
-             return self.indexOf(value) === index;
-        });
-    }
-    
-    return result;
+var mergetags = function() {
+	var args = Array.prototype.slice.call(arguments);
+	var result = {};
+
+	args.forEach(function(obj) {
+		obj && Object.keys(obj).forEach(
+				function(key) {
+					if (obj[key]) {
+						var val = obj[key].split ? obj[key].split(/\s+/) : (obj[key] instanceof Array ? obj[key] : [obj[key]]);
+						result[key] instanceof Array ? Array.prototype.push.apply(result[key], val) : result[key] = val;
+					}
+				}
+		);
+	});
+
+	return result;
 };
 
-var tokenize = function (val) {
-    if (val instanceof Array ){
-        return val;
-    }
-    return (val+'').split(/\s+/);
-};
-
-function toArray(_Object){
-       var _Array = new Array();
-       for(var name in _Object){
-               _Array[name] = _Object[name];
-       }
-       return _Array;
+var removedups = function(arr) {
+	// assuming that tags are always strings this should be fast and accurate
+	Object.keys(arr).forEach(
+			function(key) {
+				var seen = {};
+				arr[key] = arr[key].filter(function(item) {
+					return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+				}).sort();
+			}
+	);
+	
+	return arr;
 };
