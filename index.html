@@ -10,14 +10,18 @@
   <h2>Dashboard <span id='headline-count'></span> <span id='last-updated'></span></h2>
 <div class='control'>
 
-  <div id="sorts" class="button-group js-radio-button-group">
-    <button class="button is-checked" data-sort-by="original-order">No Order</button>
-    <button class="button" data-sort-by="status">Status</button>
-    <button class="button" data-sort-by="name">Name</button>
-  </div>
+  <fieldset>
+    <legend>Sort</legend>
+    <div id="sorts" class="button-group js-radio-button-group">
+      <button class="button is-checked" data-sort-by="original-order">No Order</button>
+      <button class="button" data-sort-by="status">Status</button>
+      <button class="button" data-sort-by="name">Name</button>
+    </div>
+  </fieldset>
 
   <span class="filters">
-
+  <fieldset>
+    <legend>Status</legend>
     <div class="button-group js-radio-button-group" data-filter-group="status">
       <button class="button is-checked" data-filter="">Any</button>
       <button class="button" data-filter=".status-1">Ok</button>
@@ -26,8 +30,9 @@
       <button class="button" data-filter=".status-3">Critical</button>
       <button class="button" data-filter=".status-4">Unknown</button>
     </div>
+  </fieldset>
   <!-- Dynamically built with the buildTagFilters function -->
-  <span id='tagfilters' style='margin:0;padding:0;display:block'/>
+  <span id='tagfilters' style='margin:0;padding:0;display:inline'/>
 
   </span>
 
@@ -65,7 +70,9 @@
       function buildTagFilters(tags){
         if (buttons_built){ return };
         for (var k in tags){
-          $('#tagfilters').append('<div id="filter-'+ k + '" class="button-group js-radio-button-group" data-filter-group="' + k +'">');
+          $('#tagfilters').append('<fieldset id="field-' + k +'">');
+          $('#field-' + k ).append('<legend>' + k + '</legend>');
+          $('#field-' + k ).append('<div id="filter-'+ k + '" class="button-group js-radio-button-group" data-filter-group="' + k +'">');
           $('#filter-'+k).append('<button class="button is-checked" data-filter="">Any</button>')  
           for (var idx in tags[k]){
             $('#filter-'+k).append('<button class="button" data-filter=".' + tags[k][idx] +'">' +tags[k][idx] + '</button>')
