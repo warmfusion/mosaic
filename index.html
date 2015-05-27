@@ -1,235 +1,206 @@
 <!doctype html>
 <html>
-<head>
-  <title>ProtoType Mosaic Concept</title>
-  <link rel="stylesheet" type="text/css" href="assets/demo.css">
-</head>
+	<head>
+		<title>ProtoType Mosaic Concept</title>
+		<link rel="stylesheet" type="text/css" href="assets/demo.css">
+	</head>
 
-<body>
+	<body>
+		<h2>Dashboard <span id='headline-count'></span> <span id='last-updated'></span></h2>
+		<div class='control'>
+			<span id="sorts" class="button-group js-radio-button-group">
+				<span>Sorting</span>
+				<button class="button is-checked" data-sort-by="original-order">No Order</button>
+				<button class="button" data-sort-by="status">Status</button>
+				<button class="button" data-sort-by="name">Name</button>
+			</span>
 
-  <h2>Dashboard <span id='headline-count'></span> <span id='last-updated'></span></h2>
-<div class='control'>
+			<span class="filters">
+				<span class="button-group js-radio-button-group" id="filter-status" data-filter-group="status">
+					<span>Status</span>
+					<button class="button is-checked" data-filter="">Any</button>
+					<button class="button" data-filter=".status-1">Ok</button>
+					<button class="button" data-filter=":not(.status-1)">Not-Ok</button>
+					<button class="button" data-filter=".status-2">Warning</button>
+					<button class="button" data-filter=".status-3">Critical</button>
+					<button class="button" data-filter=".status-4">Unknown</button>
+				</span>
+				<!-- Dynamically built with the buildTagFilters function -->
+				<span id='tagfilters' style="display:block"></span>
+			</span>
 
-  <div id="sorts" class="button-group js-radio-button-group">
-    <button class="button is-checked" data-sort-by="original-order">No Order</button>
-    <button class="button" data-sort-by="status">Status</button>
-    <button class="button" data-sort-by="name">Name</button>
-  </div>
+		</div>
 
-  <span class="filters">
+		<div id="grid">
+		</div>
 
-    <div class="button-group js-radio-button-group" data-filter-group="status">
-      <button class="button is-checked" data-filter="">Any</button>
-      <button class="button" data-filter=".status-1">Ok</button>
-      <button class="button" data-filter=":not(.status-1)">Not-Ok</button>
-      <button class="button" data-filter=".status-2">Warning</button>
-      <button class="button" data-filter=".status-3">Critical</button>
-      <button class="button" data-filter=".status-4">Unknown</button>
-    </div>
-  <!-- Dynamically built with the buildTagFilters function -->
-  <span id='tagfilters' style='margin:0;padding:0;display:block'/>
+		<script type="text/javascript" src="assets/jquery.js"></script>
+		<script type="text/javascript" src="assets/mergearray.js"></script>
+		<script type="text/javascript" src="assets/jquery.parseparams.js"></script>
+		<script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 
-  </span>
+		<script type="text/javascript">
+			/* Convert the search string into a useful object for our Options
+			 From http://stackoverflow.com/a/27691108 */
+			function searchToObject(search) {
+				return search.substring(1).split("&").reduce(function(result, value) {
+					var parts = value.split('=');
+					if (parts[0])
+						result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+					return result;
+				}, {});
+			}
 
-</div>
+			function getHashFilter() {
+				// get filter=filterName
+				return $.parseParams(location.hash.substring(1));
+			}
 
-  <div id="grid">
-  </div>
+			function filterHelper() {
+				var hashFilter = getHashFilter();
+				if (!hashFilter) {
+					return;
+				}
 
-    <script type="text/javascript" src="assets/jquery.js"></script>
-    <script type="text/javascript" src="assets/mergearray.js"></script>
-    <script type="text/javascript" src="assets/jquery.parseparams.js"></script>
-    <script src="assets/isotype.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+				// combine filters
+				var filterValue = '';
 
-    <script type="text/javascript">
+				for (var prop in hashFilter) {
+					filterValue += hashFilter[ prop ];
+					//Re-Select the things that are selected
+					$('#filter-' + prop).find('.is-checked').removeClass('is-checked');
+					$('#filter-' + prop).find('[data-filter="' + hashFilter[prop] + '"]').addClass('is-checked');
+				}
 
+				return filterValue;
+			}
 
+			function buildTagFilters(tags) {
+				$('#tagfilters').html("");
+				for (var group in tags) {
+					$('<div id="filter-' + group + '" class="button-group js-radio-button-group" data-filter-group="' + group + '"><span>' + group + '</span>')
+							.append('<button class="button is-checked" data-filter="">Any</button>').appendTo('#tagfilters');
+					for (var idx in tags[group]) {
+						$('#filter-' + group).append('<button class="button" data-filter=".' + tags[group][idx] + '">' + tags[group][idx] + '</button>');
+					}
+				}
 
-      /** Convert the search string into a useful object for our Options
-           From http://stackoverflow.com/a/27691108 */
-      function searchToObject(search) {
-        return search.substring(1).split("&").reduce(function(result, value) {
-          var parts = value.split('=');
-          if (parts[0]) result[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-          return result;
-        }, {})
-      }
+				filterHelper();
+			}
 
-      function getHashFilter() {
-        var hash = location.hash.substring(1);
-        // get filter=filterName
-        return $.parseParams( hash );
-      }
+			var $container = $('#grid');
 
-      var buttons_built = false;
-      function buildTagFilters(tags){
-        if (buttons_built){ return };
-        for (var k in tags){
-          $('#tagfilters').append('<div id="filter-'+ k + '" class="button-group js-radio-button-group" data-filter-group="' + k +'">');
-          $('#filter-'+k).append('<button class="button is-checked" data-filter="">Any</button>')  
-          for (var idx in tags[k]){
-            $('#filter-'+k).append('<button class="button" data-filter=".' + tags[k][idx] +'">' +tags[k][idx] + '</button>')
-          }
-        }
-        buttons_built = true;
-      }
-      var knowntags = new Array();
-      var $container = $('#grid');
+			$container.isotope({
+				itemSelector: '.item',
+				layoutMode: 'masonry',
+				getSortData: {
+					name: '.name',
+					status: '.status'
+				},
+				sortAscending: {
+					name: true,
+					status: false
+				}
+			});
 
-      $container.isotope({
-          itemSelector: '.item',
-          layoutMode: 'masonry',
-          getSortData: {
-            name: '.name',
-            status: '.status'
-          },
-            sortAscending: {
-            name: true,
-            status: false,
-          }
-      });
-
-      // sort items on button click
-      $('#sorts').on( 'click', 'button', function() {
-        var sortByValue = $(this).attr('data-sort-by');
-        $container.isotope({ sortBy: sortByValue });
-      });
-
-
-      // store filter for each group
-      var filters = {};
-
-      $('.filters').on( 'click', '.button', function() {
-        var $this = $(this);
-        // get group key
-        var $buttonGroup = $this.parents('.button-group');
-        var filterGroup = $buttonGroup.attr('data-filter-group');
-        // set filter for group
-        filters[ filterGroup ] = $this.attr('data-filter');
-        // combine filters
-        var filterValue = '';
-        for ( var prop in filters ) {
-          filterValue += filters[ prop ];
-        }
-        // This'll trigger a onHashChange event causing a grid filter
-        location.hash = $.param(filters) ;
- 
-      });
-
-      // change is-checked class on buttons
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
-      });
-
-      $(function(){
-
-        opts = searchToObject(window.location.search);
-
-        var endpoint = (typeof opts.url !== 'undefined') ? opts.url : "data/sensu.test.json";
-
-        function updateGrid(){
-          $.getJSON( endpoint, function() {
-            //console.log( "success" );
-          })
-            .done(function(data) {
-              knowntags = new Array();
-              var $container = $('#grid');
-              // Remove the elements...
-              //TODO: work out how to refresh existing rather than replace
-              $container.isotope( 'remove', $container.isotope('getItemElements'));
-
-              clients = data.Clients;
-              $('#headline-count').text( '- ' + clients.length + ' hosts');
-
-              $.each( clients, function( i, client ) {
-                  size =  client.status+1;
-                  if (!buttons_built){ // only create the known tags if weve not built filters yet - its quite heavy
-                    knowntags = mergetags(knowntags, toArray(client.tags));
-                  }
-                  var events = [];
-                  if (client.status > 0){
-                    events = jQuery.grep(data.Events, function(n,i){
-                      // Only return checks for this client, that are handled
-                      return (n.client.name == client.name && n.check.handle !== false);
-                    });
-                    // If there are no handled events, the server is actually ok in disguises
-                    if (events.length == 0){ size = 1 }
-                  }
-                  eventList = '<ul class="checks">' + $.map(events, function(val, index){
-                      return '<li>' + val.check.name + 
-                                '<span class="output">' + val.check.output + '</span></li>'; 
-                  }).join('\n') + '</ul>';
-
-                  var he = '<h2 class="name">' + client.name +'</h2>';
-
-                  var tagmeta = '';
-                  var tagclass = '';
-                  if ( client.tags != undefined ){
-                    $.each(client.tags, function( key, value ) {
-                      tagmeta  = tagmeta  + '<div style="display:none" class="' + key + '">' + value + '</div>';
-                      tagclass = tagclass + ' ' + value;
-
-                    });
-                  }
-                  var st = '<div style="display:none" class="status">' + client.status + '</div>';
+			// sort items on button click
+			$('#sorts').on('click', 'button', function() {
+				var sortByValue = $(this).attr('data-sort-by');
+				$(this).parent().find('.is-checked').removeClass('is-checked');
+				$(this).addClass('is-checked');
+				$container.isotope({sortBy: sortByValue});
+			});
 
 
-                  widget = $container.isotope('insert', $('<div class="item status-' + size +' ' + tagclass +'">' + he + tagmeta + st + eventList + '</div>'));
-                });
-                buildTagFilters(knowntags);
-            })
-            .fail(function() {
-              console.log( "error" );
-            })
-            .always(function() {
-              //console.log( "complete" );
-              $('#last-updated').text('Last Updated ' + new Date());
-            });
-          }
+			// store filter for each group
+			var filters = {};
 
-          setInterval(updateGrid, 30000);
-          updateGrid();
+			$('.filters').on('click', '.button', function() {
+				var $this = $(this);
+				// get group key
+				var $buttonGroup = $this.parents('.button-group');
+				var filterGroup = $buttonGroup.attr('data-filter-group');
+				// set filter for group
+				filters[ filterGroup ] = $this.attr('data-filter');
+				// This'll trigger a onHashChange event causing a grid filter
+				location.hash = $.param(filters);
 
-          var isIsotopeInit = false;
+			});
 
-          function onHashchange() {
-            var hashFilter = getHashFilter();
-            if ( !hashFilter && isIsotopeInit ) {
-              return;
-            }
-            isIsotopeInit = true;
-            // filter isotope
+			$(function() {
+				var opts = searchToObject(window.location.search);
+				var endpoint = (typeof opts.url !== 'undefined') ? opts.url : "data/sensu.test.json";
 
-            //Uncheck all the things
-            $('.filters').find('.is-checked').removeClass('is-checked');
-            $('.filters').find('[data-filter=""]').removeClass('is-checked');
+				function updateGrid() {
+					return $.getJSON(endpoint)
+							.done(function(data) {
+								var knowntags = {};
+								var $container = $('#grid');
+								// Remove the elements...
+								//TODO: work out how to refresh existing rather than replace
+								$container.isotope('remove', $container.isotope('getItemElements'));
 
-            // combine filters
-            var filterValue = '';
-            for ( var prop in hashFilter ) {
-              filterValue += hashFilter[ prop ];
-              //Re-Select the things that are selected
-              if ( hashFilter[prop] != '') { //Ignore the 'any' option as its 'Empty'
-                $('.filters').find('[data-filter="' + hashFilter[prop] + '"]').addClass('is-checked');
-              }
-            }
+								var clients = data.Clients;
+								$('#headline-count').text('- ' + clients.length + ' hosts');
 
-            $container.isotope({
-              itemSelector: '.item',
-              filter: filterValue
-            });
-          }
+								$.each(clients, function(i, client) {
+									var size = client.status + 1;
+									knowntags = mergetags(knowntags, client.tags);
 
-          $(window).on( 'hashchange', onHashchange );
-          // trigger event handler to init Isotope
-          onHashchange();
+									var events = [];
+									if (client.status > 0) {
+										events = $.grep(data.Events, function(n, i) {
+											// Only return checks for this client, that are handled
+											return (n.client.name === client.name && n.check.handle !== false);
+										});
+										// If there are no handled events, the server is actually ok in disguises
+										if (events.length === 0) {
+											size = 1;
+										}
+									}
+									var eventList = '<ul class="checks">' + $.map(events, function(val, index) {
+										return '<li>' + val.check.name + '<span class="output">' + val.check.output + '</span></li>';
+									}).join('\n') + '</ul>';
 
-      });
-    </script>
-</body>
+									var he = '<h2 class="name">' + client.name + '</h2>';
+
+									var tagmeta = '';
+									var tagclass = '';
+									if (client.tags != undefined) {
+										$.each(client.tags, function(key, value) {
+											tagmeta = tagmeta + '<div style="display:none" class="' + key + '">' + value + '</div>';
+											tagclass += ' ' + value;
+
+										});
+									}
+									var st = '<div style="display:none" class="status">' + client.status + '</div>';
+
+									$container.isotope('insert', $('<div class="item status-' + size + ' ' + tagclass + '">' + he + tagmeta + st + eventList + '</div>'));
+								});
+								buildTagFilters(removedups(knowntags));
+							})
+							.fail(function() {
+								console.log("error");
+							})
+							.always(function() {
+								//console.log( "complete" );
+								$('#last-updated').text('Last Updated ' + new Date());
+							});
+				}
+
+				setInterval(updateGrid, 30000);
+				updateGrid().then(onHashchange);
+
+				function onHashchange() {
+					$container.isotope({
+						itemSelector: '.item',
+						filter: filterHelper()
+					});
+				}
+
+				$(window).on('hashchange', onHashchange);
+			});
+		</script>
+	</body>
 </html>
 
