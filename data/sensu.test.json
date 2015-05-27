@@ -615,6 +615,11 @@
             "subscriptions": [
                 "yalosian.priv.example.com"
             ],
+            "tags": {
+                "environment": "live",
+                "role": "webserver",
+                "service": "nginx"
+            },
             "timestamp": 1430253905.0,
             "version": "0.17.2"
         },
@@ -644,6 +649,11 @@
             "subscriptions": [
                 "kilcot.priv.example.com"
             ],
+            "tags": {
+                "environment": "live",
+                "role": "database",
+                "service": "mysql"
+            },
             "timestamp": 1430253915.0,
             "version": "0.17.2"
         },
@@ -673,6 +683,11 @@
             "subscriptions": [
                 "rochanie.priv.example.com"
             ],
+            "tags": {
+                "environment": "live",
+                "role": "application",
+                "service": "tomcat"
+            },
             "timestamp": 1430253902.0,
             "version": "0.17.2"
         },
@@ -708,6 +723,11 @@
             "subscriptions": [
                 "schirra.priv.example.com"
             ],
+            "tags": {
+                "environment": "staging",
+                "role": "application",
+                "service": "jetty"
+            },
             "timestamp": 1430253907.0,
             "version": "0.17.2"
         },
