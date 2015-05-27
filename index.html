@@ -9,7 +9,7 @@
 		<h2>Dashboard <span id='headline-count'></span> <span id='last-updated'></span></h2>
 		<div class='control'>
 			<span id="sorts" class="button-group js-radio-button-group">
-				<span>Sorting</span>
+
 				<button class="button is-checked" data-sort-by="original-order">No Order</button>
 				<button class="button" data-sort-by="status">Status</button>
 				<button class="button" data-sort-by="name">Name</button>
@@ -17,7 +17,6 @@
 
 			<span class="filters">
 				<span class="button-group js-radio-button-group" id="filter-status" data-filter-group="status">
-					<span>Status</span>
 					<button class="button is-checked" data-filter="">Any</button>
 					<button class="button" data-filter=".status-1">Ok</button>
 					<button class="button" data-filter=":not(.status-1)">Not-Ok</button>
@@ -78,7 +77,7 @@
 			function buildTagFilters(tags) {
 				$('#tagfilters').html("");
 				for (var group in tags) {
-					$('<div id="filter-' + group + '" class="button-group js-radio-button-group" data-filter-group="' + group + '"><span>' + group + '</span>')
+					$('<div id="filter-' + group + '" class="button-group js-radio-button-group" data-filter-group="' + group + '">')
 							.append('<button class="button is-checked" data-filter="">Any</button>').appendTo('#tagfilters');
 					for (var idx in tags[group]) {
 						$('#filter-' + group).append('<button class="button" data-filter=".' + tags[group][idx] + '">' + tags[group][idx] + '</button>');
