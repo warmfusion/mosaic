@@ -70,7 +70,7 @@
 		            $('#tagfilters').append('<fieldset id="field-' + group +'">');
 			        $('#field-' + group ).append('<legend>' + group + '</legend>');
 			        $('#field-' + group ).append('<div id="filter-'+ group + '" class="button-group js-radio-button-group" data-filter-group="' + group +'">');
-					$('#filter-' + group.append('<button class="button is-checked" data-filter="">Any</button>').appendTo('#tagfilters');
+					$('#filter-' + group).append('<button class="button is-checked" data-filter="">Any</button>');
 					for (var idx in tags[group]) {
 						$('#filter-' + group).append('<button class="button" data-filter=".' + tags[group][idx] + '">' + tags[group][idx] + '</button>');
 					}
