@@ -63,6 +63,25 @@
 				return $.parseParams(location.hash.substring(1));
 			}
 
+			function filterHelper() {
+				var hashFilter = getHashFilter();
+				if (!hashFilter) {
+					return;
+				}
+
+				// combine filters
+				var filterValue = '';
+
+				for (var prop in hashFilter) {
+					filterValue += hashFilter[ prop ];
+					//Re-Select the things that are selected
+					$('#filter-' + prop).find('.is-checked').removeClass('is-checked');
+					$('#filter-' + prop).find('[data-filter="' + hashFilter[prop] + '"]').addClass('is-checked');
+				}
+
+				return filterValue;
+			}
+			
       var buttons_built = false;
 			function buildTagFilters(tags) {
 				$('#tagfilters').html("");
