@@ -107,11 +107,11 @@ body {
 }
 
 .button:active,
-.button.is-checked {
+.button.active {
   background-color: #28F;
 }
 
-.button.is-checked {
+.button.active {
   color: white;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
