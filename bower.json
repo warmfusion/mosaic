@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.0"
+    "angular": "~1.4.0",
+    "isotope": "~2.2.0"
   }
 }

@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/demo.css">
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="bower_components/angular/angular.min.js"></script>
-		<script src="bower_components/isotope/jquery.isotope.min.js"></script>
+		<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
 		<script src="src/mosaic.js"></script>
 	</head>
 
@@ -21,15 +21,8 @@
 
 		</div>
 
-		<ul id="grid">
-			<li ng-repeat="client in clients track by client.name" class="item status-{{client.size}} {{client.tagjoin}}">
-				<h2 class="name">{{client.name}}</h2>
-				<div class="status" style="display:none" >{{client.status}}</div>
-				<ul class="checks">
-					<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
-				</ul>
-			</li>
-		</ul>
+		<mosaic-isotope isotope-items="clients" isotope-options="options">
+		</mosaic-isotope>
 	</body>
 </html>
 

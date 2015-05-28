@@ -1,0 +1,9 @@
+<ul>
+	<li ng-repeat="client in clients track by client.name" class="item status-{{client.size}} {{client.tagjoin}}">
+		<h2 class="name">{{client.name}}</h2>
+		<div class="status" style="display:none" >{{client.status}}</div>
+		<ul class="checks">
+			<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
+		</ul>
+	</li>
+</ul>

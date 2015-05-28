@@ -6,6 +6,10 @@ angular.module('mosaic', [])
 				{ order: ".status", text: "Status" },
 				{ order: ".name", text: "Name" }
 			];
+			
+			$scope.options = {
+				
+			}
 
 			$interval(fetchData, 30000);
 			fetchData();
@@ -17,6 +21,19 @@ angular.module('mosaic', [])
 					$scope.last_update = new Date();
 				});
 			}
+		})
+		.directive('mosaicIsotope',function () {
+			return {
+				restrict: 'E',
+				templateUrl: 'boxtemplate.html',
+				scope: {
+					clients: '=isotopeItems',
+					options: '=isotopeOptions'
+				},
+				link: function(scope, element, attrs) {
+					
+				}
+			};
 		})
 		.service('MosaicService', function($http, $q) {
 			return {
