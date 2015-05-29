@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "angular": "~1.4.0",
-    "isotope": "~2.2.0"
+    "isotope": "~2.2.0",
+    "jquery": "~2.1.4"
   }
 }

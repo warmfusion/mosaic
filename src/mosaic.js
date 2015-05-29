@@ -1,37 +1,118 @@
 angular.module('mosaic', [])
-		.controller('MosaicController', function($scope, $interval, MosaicService) {
-			
-			$scope.sorts = [
-				{ order: "original-order", text: "No Order" },
-				{ order: ".status", text: "Status" },
-				{ order: ".name", text: "Name" }
-			];
-			
-			$scope.options = {
-				
-			}
+		.config(function($locationProvider) {
+			$locationProvider.html5Mode({enabled: true, requireBase: false});
+		})
+		.controller('MosaicController', function($scope, $interval, $location, MosaicService) {
 
-			$interval(fetchData, 30000);
+			$scope.mosaic = {
+				sorts: [
+					{order: "original-order", text: "No Order"},
+					{name: "status", order: ".status", text: "Status", asc: false},
+					{name: "name", order: ".name", text: "Name", asc: true}
+				],
+				data: {
+					sort: null,
+					clients: [],
+					filters: {}
+				},
+				filters: {
+					'status': [
+						{filter: '', text: 'Any'},
+						{filter: '.status-1', text: 'Ok'},
+						{filter: ':not(.status-1)', text: 'Not-Ok'},
+						{filter: '.status-2', text: 'Warning'},
+						{filter: '.status-3', text: 'Critical'},
+						{filter: '.status-4', text: 'Unknown'}
+					]
+				},
+				tags: {}
+			};
+
+			$interval(fetchData, 10000);
 			fetchData();
 
+			$scope.$watch('mosaic.tags', function(newValue) {
+				angular.forEach(newValue, function(filter, name) {
+					if (!$scope.mosaic.data.filters[name]) {
+						$scope.mosaic.data.filters[name] = filter[0];
+					}
+				});
+			}, true);
+
 			function fetchData() {
-				MosaicService.get('http://sensu.priv.future.net.uk/get_sensu').then(function(sensu) {
-					$scope.clients = sensu.clients;
-					$scope.tags = sensu.tags;
-					$scope.last_update = new Date();
+				MosaicService.get($location.search().url || 'data/sensu.test.json').then(function(sensu) {
+					$scope.mosaic.data.clients = sensu.clients;
+					$scope.mosaic.tags = sensu.tags;
+					$scope.mosaic.last_update = new Date();
 				});
 			}
 		})
-		.directive('mosaicIsotope',function () {
+		// @TODO maybe divide into more directives and join
+		.directive('mosaicIsotope', function($timeout) {
 			return {
-				restrict: 'E',
 				templateUrl: 'boxtemplate.html',
 				scope: {
-					clients: '=isotopeItems',
-					options: '=isotopeOptions'
+					mosaic: '=mosaic'
 				},
 				link: function(scope, element, attrs) {
+					var options = {
+						itemSelector: '.item',
+						layoutMode: 'masonry',
+						getSortData: {},
+						sortAscending: {}
+					};
+
+					angular.forEach(scope.mosaic.sorts, function(sort) {
+						if (sort.order !== "original-order") {
+							options.getSortData[sort.name] = sort.order;
+							options.sortAscending[sort.name] = sort.asc;
+						}
+					});
+
+					scope.el = element.find('.mosaic-grid');
+					scope.el.isotope(options);
+					scope.mosaic.sorts = scope.mosaic.sorts || [{order: "original-order", text: "No Order"}];
+					scope.mosaic.data.sort = scope.mosaic.sorts[0];
+
+					angular.forEach(scope.mosaic.filters, function(filter, name) {
+						if (!scope.mosaic.data.filters[name]) {
+							scope.mosaic.data.filters[name] = filter[0];
+						}
+					});
+
+					scope.$watch('mosaic.data.clients', function() {
+						$timeout(function() {
+							console.log("what is wrong")
+							scope.el.isotope('reloadItems');
+						});
+					}, true);
+
+
+					scope.$watch('mosaic.data.sort', function(value) {
+						$timeout(function() {
+							console.log("2what is wrong")
+							scope.el.isotope({sortBy: value.name});
+						});
+					}, true);
+
+					scope.$watch('mosaic.data.filters', function(value) {
+						$timeout(function() {
+							console.log(extract_filters(value))
+							scope.el.isotope({filter: extract_filters(value), itemSelector: '.item',});
+						});
+					}, true);
 					
+					 function extract_filters(filters) {
+						var filter_string = "";
+
+						angular.forEach(filters, function(value, key) {
+							if (value.filter) {
+								filter_string += value.filter;
+							}
+						});
+
+						return filter_string;
+					}
 				}
 			};
 		})
@@ -61,17 +142,28 @@ angular.module('mosaic', [])
 									size = 1;
 								}
 							}
+
 							var tagjoin = "";
-							angular.forEach(client.tags, function(tag) {
-								tagjoin += " "+tag;
+							angular.forEach(client.tags, function(tag, key) {
+								tagjoin += " " + key + "_" + tag;
 							});
 
 							clients.push({events: events, name: client.name, size: size, tags: client.tags, tagjoin: tagjoin, status: client.status});
 						});
 
+						var tags = remove_dups(tags);
+						var final_tags = {};
+						angular.forEach(tags, function(group, name) {
+							final_tags[name] = group.map(function(val) {
+								return {filter: '.' + name + '_' + val, text: val};
+							});
+
+							final_tags[name].unshift({filter: '', text: 'Any'})
+						});
+
 						return {
 							clients: clients,
-							tags: remove_dups(tags)
+							tags: final_tags
 						};
 
 					}, function(response) {

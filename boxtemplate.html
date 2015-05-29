@@ -1,9 +1,36 @@
-<ul>
-	<li ng-repeat="client in clients track by client.name" class="item status-{{client.size}} {{client.tagjoin}}">
+<div class='control'>
+	<fieldset>
+		<legend>Sort</legend>
+		<span class="sorts button-group js-radio-button-group">
+			<button ng-repeat="sort in mosaic.sorts track by sort.order" class="button" ng-click="mosaic.data.sort = sort" ng-class="{ 'is-checked': sort.order === mosaic.data.sort.order }">{{sort.text}}</button>
+		</span>
+	</fieldset>
+
+	<span class="filters">
+		<fieldset ng-repeat="(groupname,filters) in mosaic.filters track by groupname">
+			<legend>{{groupname}}</legend>
+			<div class="button-group js-radio-button-group">
+				<button ng-repeat="filter in filters track by filter.filter" class="button" ng-click="mosaic.data.filters[groupname] = filter" ng-class="{ 'is-checked': filter.filter === mosaic.data.filters[groupname].filter }">{{filter.text}}</button>
+			</div>
+		</fieldset>
+
+		<span id="tags">
+			<fieldset ng-repeat="(groupname,filters) in mosaic.tags track by groupname">
+				<legend>{{groupname}}</legend>
+				<div class="button-group js-radio-button-group">
+					<button ng-repeat="filter in filters track by filter.filter" class="button" ng-click="mosaic.data.filters[groupname] = filter" ng-class="{ 'is-checked': filter.filter === mosaic.data.filters[groupname].filter }">{{filter.text}}</button>
+				</div>
+			</fieldset>
+		</span>
+	</span>
+
+</div>
+<div class="mosaic-grid">
+	<div ng-repeat="client in mosaic.data.clients track by client.name" class="item status-{{client.size}}{{client.tagjoin}}">
 		<h2 class="name">{{client.name}}</h2>
 		<div class="status" style="display:none" >{{client.status}}</div>
 		<ul class="checks">
 			<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
 		</ul>
-	</li>
-</ul>
+	</div>
+</div>

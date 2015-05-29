@@ -1,18 +1,27 @@
-
-
 ul {
   list-style-type: none;
   margin:  0;
   padding: 0;
 }
 
+fieldset{
+  display:inline;
+  text-transform: capitalize;
+  border-radius:3px;
+}
+legend {
+  padding: 0.1em 0.5em;
+  border:1px solid;
+  border-radius: 5px;
+  font-size:0.7em;
+}
+
 .item{
-  width:  100px;
-  height: 100px;
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
-  margin: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -29,22 +38,22 @@ ul {
 .status-1 { /* OK */
   border-left: 5px solid  #44CC44 !important;
   background-color: rgb(200,255,200);
-  width:  100px;
-  height: 100px;
+  width:  90px;
+  height: 90px;
 }
 
 .status-2 { /* WARN */
   border-left: 5px solid rgb(249, 186, 70) !important;
   background-color: rgb(255,240,120);
-  width:  210px;
-  height: 210px; 
+  width:  190px;
+  height: 190px; 
 }
 
 .status-3 { /* CRITICAL */
   border-left: 5px solid rgb(234, 84, 67) !important;
   background-color: rgb(255,160,120);
-  width:  320px;
-  height: 320px;
+  width:  290px;
+  height: 290px;
 }
 
 .status-4 { /* UNKNOWN */
@@ -79,7 +88,11 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #444;
-    margin: 20px 20px;
+    margin: 05px;
+}
+
+#tags {
+	display:block;
 }
 
 
@@ -88,18 +101,17 @@ body {
 
 .button {
   display: inline-block;
-  padding: 0.5em 1.0em;
+  padding: 0.2em 0.3em;
   background: #EEE;
   border: none;
-  border-radius: 7px;
+  border-radius: 3px;
   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: #222;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 0.9em;
   text-shadow: 0 1px white;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: #8CF;
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
@@ -107,11 +119,11 @@ body {
 }
 
 .button:active,
-.button.active {
+.button.is-checked {
   background-color: #28F;
 }
 
-.button.active {
+.button.is-checked {
   color: white;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
@@ -142,4 +154,3 @@ body {
   display: inline-block;
   margin-right: 20px;
 }
-
