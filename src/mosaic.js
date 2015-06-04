@@ -82,15 +82,15 @@ angular.module('mosaic', [])
 
 					scope.$watch('mosaic.data.clients', function() {
 						$timeout(function() {
-							console.log("what is wrong")
-							scope.el.isotope('reloadItems');
+							console.log("mosaic.data.clients has updated")
+							scope.el.isotope('layout');
 						});
 					}, true);
 
 
 					scope.$watch('mosaic.data.sort', function(value) {
 						$timeout(function() {
-							console.log("2what is wrong")
+							console.log("mosaic.data.sort has updated")
 							scope.el.isotope({sortBy: value.name});
 						});
 					}, true);
