@@ -17,6 +17,15 @@ or add 'cors' headers to the get_sensu response such that your browser will allo
 
 Add `?url=<your_uchiwa_host>/get_sensu` to select where the dashboard will consume its data
 
+### CORS header
+
+Haproxy configuration to automatically create CORS headers for ANY incoming server is as shown below:
+
+    capture request header origin len 128
+    http-response add-header Access-Control-Allow-Origin %[capture.req.hdr(0)] if { capture.req.hdr(0) -m found }
+    rspadd Access-Control-Allow-Headers:\ Origin,\ X-Requested-With,\ Content-Type,\ Accept  if { capture.req.hdr(0) -m found }
+
+
 ## Testing
 
 Run a test webserver and access it on http://localhost:9090
