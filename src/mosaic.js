@@ -84,10 +84,7 @@ angular.module('mosaic', [])
 					scope.$watch('mosaic.data.clients', function() {
 						$timeout(function() {
 							console.log("mosaic.data.clients has updated")
-							if (scope.el.first) { // Must be a better way of doing this...
-								scope.el.isotope('reloadItems');
-								scope.el.first  = false;
-							}
+							scope.el.isotope('reloadItems'); // Doesn't feel right having to do this twice
 							scope.el.isotope('layout');
 						});
 					}, true);
