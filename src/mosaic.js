@@ -152,7 +152,9 @@ angular.module('mosaic', [])
 							angular.forEach(client.tags, function(tag, key) {
 								tagjoin += " " + key + "_" + tag;
 							});
-							size=Math.floor((Math.random() * 3) + 1);
+
+							// Disco Mode...
+							//size=Math.floor((Math.random() * 3) + 1);
 
 
 							clients.push({events: events, name: client.name, size: size, tags: client.tags, tagjoin: tagjoin, status: client.status});
