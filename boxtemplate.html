@@ -14,23 +14,24 @@
 			</div>
 		</fieldset>
 
-		<span id="tags">
-			<fieldset ng-repeat="(groupname,filters) in mosaic.tags track by groupname">
-				<legend>{{groupname}}</legend>
-				<div class="button-group js-radio-button-group">
-					<button ng-repeat="filter in filters track by filter.filter" class="button" ng-click="mosaic.data.filters[groupname] = filter" ng-class="{ 'is-checked': filter.filter === mosaic.data.filters[groupname].filter }">{{filter.text}}</button>
-				</div>
-			</fieldset>
-		</span>
+		<fieldset ng-repeat="(groupname,filters) in mosaic.tags track by groupname">
+			<legend>{{groupname}}</legend>
+			<div class="button-group js-radio-button-group">
+				<button ng-repeat="filter in filters track by filter.filter" class="button" ng-click="mosaic.data.filters[groupname] = filter" ng-class="{ 'is-checked': filter.filter === mosaic.data.filters[groupname].filter }">{{filter.text}}</button>
+			</div>
+		</fieldset>
+
 	</span>
 
 </div>
 <div class="mosaic-grid">
 	<div ng-repeat="client in mosaic.data.clients track by client.name" class="item status-{{client.size}}{{client.tagjoin}}">
 		<h2 class="name">{{client.name}}</h2>
-		<div class="status" style="display:none" >{{client.status}}</div>
-		<ul class="checks">
-			<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
-		</ul>
+		<div>
+			<div class="status" style="display:none" >{{client.status}}</div>
+			<ul class="checks">
+				<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
+			</ul>
+		</div>
 	</div>
 </div>

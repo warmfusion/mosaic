@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html ng-app="mosaic" ng-controller="MosaicController">
 	<head>
-		<title>ProtoType Mosaic Concept</title>
+		<title>Mosaic - {{mosaic.data.clients.length}} hosts</title>
 		<link rel="stylesheet" type="text/css" href="assets/demo.css">
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/angular/angular.min.js"></script>
@@ -9,9 +9,11 @@
 		<script src="src/mosaic.js"></script>
 	</head>
 
-	<body ng-app="mosaic" ng-controller="MosaicController">
-		<h2>Dashboard - {{mosaic.data.clients.length}} hosts <span id="last-updated" ng-bind="mosaic.last_update"></span> </h2>
+	<body >
 		<div mosaic-isotope mosaic="mosaic" id="grid"></div>
+		<div id='footer'>
+		<p id="last-updated">Last updated: <span ng-bind="mosaic.last_update"></span></p>
+		</div>
 	</body>
 </html>
 
