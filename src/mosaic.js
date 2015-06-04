@@ -71,6 +71,7 @@ angular.module('mosaic', [])
 
 					scope.el = element.find('.mosaic-grid');
 					scope.el.isotope(options);
+
 					scope.mosaic.sorts = scope.mosaic.sorts || [{order: "original-order", text: "No Order"}];
 					scope.mosaic.data.sort = scope.mosaic.sorts[0];
 
@@ -83,6 +84,10 @@ angular.module('mosaic', [])
 					scope.$watch('mosaic.data.clients', function() {
 						$timeout(function() {
 							console.log("mosaic.data.clients has updated")
+							if (scope.el.first) { // Must be a better way of doing this...
+								scope.el.isotope('reloadItems');
+								scope.el.first  = false;
+							}
 							scope.el.isotope('layout');
 						});
 					}, true);
@@ -147,6 +152,8 @@ angular.module('mosaic', [])
 							angular.forEach(client.tags, function(tag, key) {
 								tagjoin += " " + key + "_" + tag;
 							});
+							size=Math.floor((Math.random() * 3) + 1);
+
 
 							clients.push({events: events, name: client.name, size: size, tags: client.tags, tagjoin: tagjoin, status: client.status});
 						});
