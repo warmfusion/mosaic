@@ -36,6 +36,32 @@ legend {
 .item h2 {
    margin:0;
 }
+
+.item:hover {
+  z-index: 5;
+  -webkit-transform: scale(2);
+     -moz-transform: scale(2);
+      -ms-transform: scale(2);
+       -o-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: -webkit-transform 0.25s;
+     -moz-transition: -moz-transform    0.25s;
+      -ms-transition: -ms-transform     0.25s;
+       -o-transition: -o-transform      0.25s;
+          transition: transform         0.25s;
+}
+
+.item:hover .output{
+    overflow:  visible;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: normal !important;
+}
+
+.status-1:hover{
+  width:200px;
+  height:200px;
+}
 #last-updated{
   font-size:0.7em;
 }
@@ -166,4 +192,8 @@ body {
 
 .tags .name{
   font-weight: 800;
+}
+
+mosaic-grid {
+  display: block;
 }
