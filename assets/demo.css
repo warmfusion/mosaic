@@ -159,3 +159,11 @@ body {
   display: inline-block;
   margin-right: 0px;
 }
+
+.tags {
+  font-size: 0.6em;
+}
+
+.tags .name{
+  font-weight: 800;
+}
