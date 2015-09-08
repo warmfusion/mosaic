@@ -28,7 +28,7 @@ angular.module('mosaic', [])
 				tags: {}
 			};
 
-			$interval(fetchData, 10000);
+			$interval(fetchData, 60000);
 			fetchData();
 
 			$scope.$watch('mosaic.tags', function(newValue) {
