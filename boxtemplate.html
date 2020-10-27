@@ -31,9 +31,6 @@
 		<h2 class="name">{{client.name}}</h2>
 		<div>
 			<div class="status" style="display:none" >{{client.status}}</div>
-			<ul class="checks">
-				<li ng-repeat="event in client.events">{{event.check.name}} <span class="output">{{event.check.output}}</span></li>
-			</ul>
 			<ul class="tags" ng-if='settings.showTags'>
 			   <li ng-repeat="(name, value) in client.tags"><span class='name'>{{name}}:</span> {{value}} </li>
 		    </ul>

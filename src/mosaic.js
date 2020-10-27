@@ -16,14 +16,6 @@ angular.module('mosaic', [])
 					filters: {}
 				},
 				filters: {
-					'status': [
-						{filter: '', text: 'Any'},
-						{filter: '.status-1', text: 'Ok'},
-						{filter: ':not(.status-1)', text: 'Not-Ok'},
-						{filter: '.status-2', text: 'Warning'},
-						{filter: '.status-3', text: 'Critical'},
-						{filter: '.status-4', text: 'Unknown'}
-					]
 				},
 				tags: {}
 			};
@@ -40,9 +32,9 @@ angular.module('mosaic', [])
 			}, true);
 
 			function fetchData() {
-				MosaicService.get($location.search().url || 'data/sensu.test.json').then(function(sensu) {
-					$scope.mosaic.data.clients = sensu.clients;
-					$scope.mosaic.tags = sensu.tags;
+				MosaicService.get($location.search().url || 'data/sensu.test.json').then(function(nodes) {
+					$scope.mosaic.data.clients = nodes.clients;
+					$scope.mosaic.data.tags = nodes.tags;
 					$scope.mosaic.last_update = new Date();
 				});
 			}
@@ -103,7 +95,7 @@ angular.module('mosaic', [])
 							scope.el.isotope({filter: extract_filters(value), itemSelector: '.item',});
 						});
 					}, true);
-					
+
 					 function extract_filters(filters) {
 						var filter_string = "";
 
@@ -128,25 +120,25 @@ angular.module('mosaic', [])
 						var clients = [];
 						var tags = {};
 
-						angular.forEach(response.data.Clients, function(client, i) {
+						angular.forEach(response.data, function(client, i) {
 
-							var size = client.status + 1;
-							tags = merge_tags(tags, client.tags);
+							var size = 2;
+							tags = merge_tags(tags, client.Meta);
 
 							var events = [];
-							if (client.status > 0) {
-								events = response.data.Events.filter(function(n) {
-									// Only return checks for this client, that are handled
-									return (n.client.name === client.name && n.check.handle !== false);
-								});
-								// If there are no handled events, the server is actually ok in disguises
-								if (events.length === 0) {
-									size = 1;
-								}
-							}
+							// if (client.status > 0) {
+							// 	events = response.data.Events.filter(function(n) {
+							// 		// Only return checks for this client, that are handled
+							// 		return (n.client.name === client.name && n.check.handle !== false);
+							// 	});
+							// 	// If there are no handled events, the server is actually ok in disguises
+							// 	if (events.length === 0) {
+							// 		size = 1;
+							// 	}
+							// }
 
 							var tagjoin = "";
-							angular.forEach(client.tags, function(tag, key) {
+							angular.forEach(client.Meta, function(tag, key) {
 								tagjoin += " " + key + "_" + tag;
 							});
 
@@ -154,7 +146,7 @@ angular.module('mosaic', [])
 							//size=Math.floor((Math.random() * 3) + 1);
 
 
-							clients.push({events: events, name: client.name, size: size, tags: client.tags, tagjoin: tagjoin, status: client.status});
+							clients.push({events: events, name: client.Node, size: size, tags: client.Meta, tagjoin: tagjoin, status: 0});
 						});
 
 						var tags = remove_dups(tags);
