@@ -53,6 +53,7 @@ kolt-release:
   only:
     refs:
       - master
+      - consul_mode
   script:
     - kolt release --to $CLUSTER --namespace ${NAMESPACE}
   environment:                                       # Required to make gitlab-ci trigger the undeploy action on branch removal
