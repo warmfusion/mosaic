@@ -21,7 +21,7 @@ spec:
       - backend:
           serviceName: mosaic
           servicePort: 80
- tls:
- - hosts:
-   - mosaic.futuretech.tools
-   secretName: mosaic-certificate
+  tls:
+  - hosts:
+    - mosaic.futuretech.tools
+    secretName: mosaic-certificate
