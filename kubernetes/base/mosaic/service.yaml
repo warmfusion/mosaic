@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mosaic
+  labels:
+    app: mosaic
+spec:
+  selector:
+    app: mosaic
+  ports:
+  - name: http
+    port: 8080

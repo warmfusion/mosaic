@@ -32,7 +32,7 @@ angular.module('mosaic', [])
 			}, true);
 
 			function fetchData() {
-				MosaicService.get($location.search().url || 'data/sensu.test.json').then(function(nodes) {
+				MosaicService.get($location.search().url || 'http://consul.mon.future.net.uk/v1/catalog/nodes').then(function(nodes) {
 					$scope.mosaic.data.clients = nodes.clients;
 					$scope.mosaic.tags = nodes.tags;
 					$scope.mosaic.last_update = new Date();

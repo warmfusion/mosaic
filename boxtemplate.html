@@ -22,16 +22,13 @@
 		</fieldset>
 
 	</span>
-	<label>Show Tags:
-	    <input type="checkbox" ng-model="settings.showTags" />
-	</label>
 </div>
 <div class="mosaic-grid">
 	<div ng-repeat="client in mosaic.data.clients track by client.name" class="item status-2{{client.tagjoin}}">
 		<h2 class="name">{{client.name}}</h2>
 		<div>
 			<div class="status" style="display:none" >2</div>
-			<ul class="tags" ng-if='settings.showTags'>
+			<ul class="tags">
 			   <li ng-repeat="(name, value) in client.tags"><span class='name'>{{name}}:</span> {{value}} </li>
 		    </ul>
 		</div>

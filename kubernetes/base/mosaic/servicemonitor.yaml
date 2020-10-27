@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: mosaic
+  labels:
+    app: mosaic
+spec:
+  selector:
+    matchLabels:
+      app: mosaic
+  endpoints:
+    - port: http
