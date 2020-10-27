@@ -14,7 +14,6 @@ build-container:
   tags:
     - docker-builder # Required for docker build commands.
   script:
-    - cd hello-world
     - docker pull docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:latest || true # Optimisation for speed of building these containers
     - docker build -t docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID} .
     - docker push docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID}
