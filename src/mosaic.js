@@ -123,7 +123,12 @@ angular.module('mosaic', [])
 						angular.forEach(response.data, function(client, i) {
 
 							var size = 2;
-							tags = merge_tags(tags, client.Meta);
+							normalTags = {};
+							angular.forEach(client.Meta, function(tag, key) {
+								normalTags[key] = tag.replaceAll('.', '-');
+							});
+
+							tags = merge_tags(tags, normalTags);
 
 							var events = [];
 							// if (client.status > 0) {
@@ -138,7 +143,7 @@ angular.module('mosaic', [])
 							// }
 
 							var tagjoin = "";
-							angular.forEach(client.Meta, function(tag, key) {
+							angular.forEach(normalTags, function(tag, key) {
 								tagjoin += " " + key + "_" + tag;
 							});
 
@@ -146,7 +151,7 @@ angular.module('mosaic', [])
 							//size=Math.floor((Math.random() * 3) + 1);
 
 
-							clients.push({events: events, name: client.Node, size: size, tags: client.Meta, tagjoin: tagjoin, status: 0});
+							clients.push({events: events, name: client.Node, size: size, tags: normalTags, tagjoin: tagjoin, status: 0});
 						});
 
 						var tags = remove_dups(tags);
