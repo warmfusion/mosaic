@@ -34,7 +34,7 @@ angular.module('mosaic', [])
 			function fetchData() {
 				MosaicService.get($location.search().url || 'data/sensu.test.json').then(function(nodes) {
 					$scope.mosaic.data.clients = nodes.clients;
-					$scope.mosaic.data.tags = nodes.tags;
+					$scope.mosaic.tags = nodes.tags;
 					$scope.mosaic.last_update = new Date();
 				});
 			}
