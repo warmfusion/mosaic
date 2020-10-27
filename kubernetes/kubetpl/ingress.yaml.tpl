@@ -11,4 +11,4 @@ spec:
       paths:
       - backend:
           serviceName: mosaic
-          servicePort: 8080
+          servicePort: 80

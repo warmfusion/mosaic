@@ -27,12 +27,12 @@ spec:
         livenessProbe:
           httpGet:
             path: /healthz
-            port: 8080
+            port: 80
           initialDelaySeconds: 3
           periodSeconds: 3
         readinessProbe:
           httpGet:
             path: /healthz
-            port: 8080
+            port: 80
           initialDelaySeconds: 3
           periodSeconds: 3

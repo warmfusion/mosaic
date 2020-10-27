@@ -9,4 +9,4 @@ spec:
     app: mosaic
   ports:
   - name: http
-    port: 8080
+    port: 80
