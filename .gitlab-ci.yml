@@ -1,0 +1,74 @@
+stages:
+  - build
+  - release
+
+variables:
+  CLUSTER: eng-prod #CHANGEME to point to the cluster you really want to deploy into
+  NAMESPACE: ${CI_PROJECT_NAMESPACE}-${CI_PROJECT_NAME}-${CI_COMMIT_REF_SLUG}
+
+# Step 1 - Build new containers for deployment onto Kubernetes
+#   - Unique names based on CI pipeline so every build is unique
+#   - if on master create a :latest to speed up builds and for ease of use
+build-container:
+  stage: build
+  tags:
+    - docker-builder # Required for docker build commands.
+  script:
+    - docker pull docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:latest || true # Optimisation for speed of building these containers
+    - docker build -t docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID} .
+    - docker push docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID}
+    - if [ "$CI_COMMIT_REF_NAME" == "master" ]; then
+          docker tag docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID} docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:latest;
+          docker push docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:latest;
+        fi
+
+
+
+# Step 2 - Construct the kubernetes deployment from templates
+# Goal: a `kolt` directory with kubernetes yamls
+build-kubernetes:
+  image: docker.artifactory.futurenet.com/docker/kubehelper/helper:1.0.0
+  stage: build
+  script:
+    - kubetpl render kubernetes/kubetpl/ingress.yaml.tpl -s DOMAIN=${CI_PROJECT_NAMESPACE}-${CI_PROJECT_NAME} -s CLUSTER=$CLUSTER > kubernetes/overlays/$CLUSTER/ingress.yaml
+    - kubetpl render kubernetes/kubetpl/namespace.yaml.tpl
+        -s NAMESPACE=${NAMESPACE}
+        -s CI_GROUP=${CI_PROJECT_NAMESPACE}
+        -s CI_PROJECT=${CI_PROJECT_NAME} > kubernetes/overlays/$CLUSTER/namespace.yaml
+    - cd kubernetes/overlays/$CLUSTER
+    - kustomize edit set image docker.artifactory.futurenet.com/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_PIPELINE_IID}
+    - kustomize edit set namespace "${CI_PROJECT_NAMESPACE}-${CI_PROJECT_NAME}-${CI_COMMIT_REF_SLUG}"
+    - mkdir -p ${CI_PROJECT_DIR}/kolt/
+    - kustomize build ${CI_PROJECT_DIR}/kubernetes/overlays/$CLUSTER -o ${CI_PROJECT_DIR}/kolt/build.yml
+  artifacts:
+    paths:
+      - kolt
+
+# Step 3 - Release to the target cluster
+kolt-release:
+  image: docker.artifactory.futurenet.com/engineering/kolt:v1
+  stage: release
+  dependencies: [build-kubernetes]
+  only:
+    refs:
+      - master
+      - consul_mode
+  script:
+    - kolt release --to $CLUSTER --namespace ${NAMESPACE}
+  environment:                                       # Required to make gitlab-ci trigger the undeploy action on branch removal
+    name: cluster-name/$CI_COMMIT_REF_NAME           # A unique name for the environment
+    url: https://argocd.eng-prod.futureplc.engineering/applications?search=$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME # Can be anything, but this is useful
+    on_stop: kolt-remove                             # Name of the job to trigger on branch removal (aka environment stop)
+
+kolt-remove:
+  image: docker.artifactory.futurenet.com/engineering/kolt:v1
+  stage: release
+  dependencies: []
+  variables:
+    GIT_STRATEGY: none    # Do not clone repo as branch may have been deleted (and we dont need it) https://docs.gitlab.com/ee/ci/yaml/#environmentaction
+  script:
+    - kolt remove --to $CLUSTER    --namespace ${NAMESPACE}    # Forgive the grammar here :-)
+  when: manual                                                 # This prevents undeploy running everytime, but still works when branch is removed
+  environment:
+    name: cluster-name/$CI_COMMIT_REF_NAME                     # Must match the deploy job
+    action: stop

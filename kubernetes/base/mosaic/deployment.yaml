@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosaic
+spec:
+  selector:
+    matchLabels:
+      app: mosaic
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mosaic # Has to match the spec.selector.matchLabels
+    spec:
+      containers:
+      - name: mosaic
+        image: docker.artifactory.futurenet.com/tjackson02/mosaic:latest
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "1m"
+          limits:
+            memory: "512Mi"
+            cpu: "50m"
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 3
