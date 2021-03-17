@@ -20,8 +20,8 @@ spec:
     http:
       paths:
       - backend:
-        serviceName: mosaic
-        servicePort: 80
+          serviceName: mosaic
+          servicePort: 80
   # See above for why this is disabled
   # tls:
   # - hosts:
